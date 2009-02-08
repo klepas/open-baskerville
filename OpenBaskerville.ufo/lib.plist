@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>org.robofab.glyphOrder</key>
+	<array>
+		<string>.notdef</string>
+		<string>.null</string>
+		<string>CR</string>
+		<string>space</string>
+		<string>L</string>
+		<string>U</string>
+		<string>O</string>
+		<string>Q</string>
+		<string>C</string>
+		<string>o</string>
+		<string>E</string>
+		<string>F</string>
+		<string>M</string>
+		<string>D</string>
+		<string>V</string>
+		<string>B</string>
+		<string>dollar</string>
+		<string>T</string>
+		<string>N</string>
+		<string>W</string>
+		<string>P</string>
+		<string>S</string>
+		<string>R</string>
+		<string>G</string>
+		<string>K</string>
+		<string>X</string>
+		<string>Y</string>
+		<string>Z</string>
+		<string>l</string>
+		<string>p</string>
+		<string>i</string>
+		<string>d</string>
+		<string>q</string>
+		<string>b</string>
+		<string>c</string>
+		<string>e</string>
+		<string>j</string>
+		<string>k</string>
+		<string>v</string>
+		<string>x</string>
+		<string>a</string>
+		<string>f</string>
+		<string>g</string>
+		<string>h</string>
+		<string>s</string>
+		<string>n</string>
+		<string>m</string>
+		<string>r</string>
+		<string>t</string>
+		<string>u</string>
+		<string>w</string>
+		<string>y</string>
+		<string>z</string>
+		<string>one</string>
+		<string>two</string>
+		<string>three</string>
+		<string>four</string>
+		<string>five</string>
+		<string>six</string>
+		<string>seven</string>
+		<string>eight</string>
+		<string>nine</string>
+		<string>ff</string>
+		<string>fi</string>
+		<string>fl</string>
+		<string>ffi</string>
+		<string>ffl</string>
+		<string>c_t</string>
+		<string>A</string>
+		<string>zero</string>
+		<string>period</string>
+		<string>colon</string>
+		<string>semicolon</string>
+		<string>question</string>
+		<string>exclam</string>
+		<string>comma</string>
+		<string>dotlessi</string>
+		<string>grave</string>
+		<string>agrave.001</string>
+		<string>egrave.001</string>
+		<string>igrave</string>
+		<string>ograve.001</string>
+		<string>ugrave.001</string>
+		<string>acute</string>
+		<string>aacute.001</string>
+		<string>eacute.001</string>
+		<string>iacute</string>
+		<string>oacute.001</string>
+		<string>uacute.001</string>
+		<string>yacute.001</string>
+		<string>dieresis</string>
+		<string>adieresis.001</string>
+		<string>edieresis.001</string>
+		<string>idieresis</string>
+		<string>odieresis.001</string>
+		<string>udieresis.001</string>
+		<string>ydieresis.001</string>
+		<string>circumflex</string>
+		<string>icircumflex</string>
+		<string>acircumflex.001</string>
+		<string>ecircumflex.001</string>
+		<string>ocircumflex.001</string>
+		<string>ucircumflex.001</string>
+		<string>Adieresis.001</string>
+		<string>Edieresis.001</string>
+		<string>Idieresis.001</string>
+		<string>Odieresis</string>
+		<string>Udieresis.001</string>
+		<string>Acircumflex.001</string>
+		<string>Ecircumflex.001</string>
+		<string>Ocircumflex</string>
+		<string>Ucircumflex.001</string>
+		<string>Icircumflex.001</string>
+		<string>Agrave.001</string>
+		<string>Egrave.001</string>
+		<string>Igrave.001</string>
+		<string>Ograve</string>
+		<string>Ugrave.001</string>
+		<string>Aacute.001</string>
+		<string>Eacute.001</string>
+		<string>Iacute.001</string>
+		<string>Oacute</string>
+		<string>Uacute.001</string>
+		<string>Yacute</string>
+		<string>agrave.002</string>
+		<string>agrave</string>
+		<string>aacute</string>
+		<string>adieresis</string>
+		<string>acircumflex</string>
+		<string>egrave</string>
+		<string>eacute</string>
+		<string>edieresis</string>
+		<string>ecircumflex</string>
+		<string>dotlessigrave</string>
+		<string>dotlessiacute</string>
+		<string>dotlessidieresis</string>
+		<string>dotlessicircumflex</string>
+		<string>ugrave</string>
+		<string>uacute</string>
+		<string>udieresis</string>
+		<string>ucircumflex</string>
+		<string>ograve</string>
+		<string>oacute</string>
+		<string>odieresis</string>
+		<string>ocircumflex</string>
+		<string>Agrave</string>
+		<string>Aacute</string>
+		<string>Adieresis</string>
+		<string>Acircumflex</string>
+		<string>Igrave</string>
+		<string>Iacute</string>
+		<string>Idieresis</string>
+		<string>Icircumflex</string>
+		<string>Egrave</string>
+		<string>Eacute</string>
+		<string>Edieresis</string>
+		<string>Ecircumflex</string>
+		<string>Ugrave</string>
+		<string>Uacute</string>
+		<string>Udieresis</string>
+		<string>Ucircumflex</string>
+		<string>yacute</string>
+		<string>ydieresis</string>
+		<string>quoteleft</string>
+		<string>quoteright</string>
+		<string>quotedblright</string>
+		<string>quotedblleft</string>
+		<string>parenleft</string>
+		<string>parenright</string>
+		<string>ampersand</string>
+		<string>I</string>
+		<string>f_j</string>
+		<string>s_t</string>
+		<string>H</string>
+		<string>J</string>
+		<string>caron</string>
+		<string>Scaron.001</string>
+		<string>Zcaron.001</string>
+		<string>scaron.001</string>
+		<string>zcaron.001</string>
+		<string>Scaron.002</string>
+		<string>Zcaron.002</string>
+		<string>scaron.002</string>
+		<string>zcaron.002</string>
+		<string>Scaron</string>
+		<string>Zcaron</string>
+		<string>scaron</string>
+		<string>zcaron</string>
+		<string>exclamdown</string>
+		<string>f_f_j</string>
+		<string>g_i</string>
+		<string>registered</string>
+	</array>
+	<key>org.robofab.opentype.featureorder</key>
+	<array>
+		<string>onum</string>
+		<string>dlig</string>
+		<string>liga</string>
+		<string>swsh</string>
+	</array>
+	<key>org.robofab.opentype.features</key>
+	<dict>
+		<key>dlig</key>
+		<string>feature dlig {
+  sub c t by c_t;
+  sub s t by s_t;
+} dlig;
+</string>
+		<key>liga</key>
+		<string>feature liga {
+  sub f f i by ffi;
+  sub f i by fi;
+  sub ffl by ffl;
+  sub f l by fl;
+  sub f f by ff;
+  sub f j by f_j;
+  sub f f j by f_f_j;
+} liga;
+</string>
+		<key>onum</key>
+		<string>feature onum {
+  sub zero by zero.oldstyle  ;
+  sub one by one.oldstyle  ;
+  sub two by two.oldstyle  ;
+  sub three by three.oldstyle  ;
+  sub four by four.oldstyle  ;
+  sub five by five.oldstyle  ;
+  sub six by six.oldstyle  ;
+  sub seven by seven.oldstyle  ;
+  sub eight by eight.oldstyle  ;
+  sub nine by nine.oldstyle  ;
+} onum;
+</string>
+		<key>swsh</key>
+		<string>feature swsh {
+  sub g i by g_i ;
+} swsh;
+
+
+
+</string>
+	</dict>
+	<key>org.robofab.postScriptHintData</key>
+	<dict>
+		<key>blueFuzz</key>
+		<integer>1</integer>
+		<key>blueScale</key>
+		<real>0.039625</real>
+		<key>blueShift</key>
+		<integer>7</integer>
+		<key>blueValues</key>
+		<array>
+			<array>
+				<integer>-218</integer>
+				<integer>-204</integer>
+			</array>
+			<array>
+				<integer>-14</integer>
+				<integer>0</integer>
+			</array>
+			<array>
+				<integer>421</integer>
+				<integer>434</integer>
+			</array>
+			<array>
+				<integer>676</integer>
+				<integer>691</integer>
+			</array>
+		</array>
+		<key>hStems</key>
+		<array>
+			<integer>20</integer>
+			<integer>16</integer>
+			<integer>13</integer>
+		</array>
+		<key>vStems</key>
+		<array>
+			<integer>100</integer>
+			<integer>68</integer>
+		</array>
+	</dict>
+</dict>
+</plist>

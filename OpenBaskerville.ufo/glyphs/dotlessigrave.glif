@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotlessigrave" format="1">
+  <advance width="254"/>
+  <outline>
+    <component base="dotlessi"/>
+    <component base="grave" xOffset="-83"/>
+  </outline>
+</glyph>

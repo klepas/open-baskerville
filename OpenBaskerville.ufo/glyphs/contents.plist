@@ -260,6 +260,8 @@
 	<string>g.glif</string>
 	<key>g_i</key>
 	<string>g_i.glif</string>
+	<key>germandbls</key>
+	<string>germandbls.glif</string>
 	<key>grave</key>
 	<string>grave.glif</string>
 	<key>h</key>

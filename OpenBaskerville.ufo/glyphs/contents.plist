@@ -164,6 +164,8 @@
 	<string>adieresis.glif</string>
 	<key>adieresis.001</key>
 	<string>adieresis_001.glif</string>
+	<key>ae</key>
+	<string>ae.glif</string>
 	<key>agrave</key>
 	<string>agrave.glif</string>
 	<key>agrave.001</key>

@@ -294,6 +294,8 @@
 	<string>odieresis.glif</string>
 	<key>odieresis.001</key>
 	<string>odieresis_001.glif</string>
+	<key>oe</key>
+	<string>oe.glif</string>
 	<key>ograve</key>
 	<string>ograve.glif</string>
 	<key>ograve.001</key>

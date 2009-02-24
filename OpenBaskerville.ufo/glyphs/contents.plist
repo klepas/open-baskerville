@@ -146,8 +146,6 @@
 	<string>Y_.glif</string>
 	<key>Yacute</key>
 	<string>Y_acute.glif</string>
-	<key>Ydieresis</key>
-	<string>Y_dieresis.glif</string>
 	<key>Z</key>
 	<string>Z_.glif</string>
 	<key>Zcaron</key>
@@ -182,6 +180,8 @@
 	<string>agrave_002.glif</string>
 	<key>ampersand</key>
 	<string>ampersand.glif</string>
+	<key>asterisk</key>
+	<string>asterisk.glif</string>
 	<key>at</key>
 	<string>at.glif</string>
 	<key>b</key>
@@ -268,8 +268,6 @@
 	<string>grave.glif</string>
 	<key>h</key>
 	<string>h.glif</string>
-	<key>hyphen</key>
-	<string>hyphen.glif</string>
 	<key>i</key>
 	<string>i.glif</string>
 	<key>iacute</key>
@@ -288,6 +286,8 @@
 	<string>k.glif</string>
 	<key>l</key>
 	<string>l.glif</string>
+	<key>longs_t</key>
+	<string>longs_t.glif</string>
 	<key>m</key>
 	<string>m.glif</string>
 	<key>n</key>
@@ -330,6 +330,8 @@
 	<string>q.glif</string>
 	<key>question</key>
 	<string>question.glif</string>
+	<key>questiondown</key>
+	<string>questiondown.glif</string>
 	<key>quotedblleft</key>
 	<string>quotedblleft.glif</string>
 	<key>quotedblright</key>

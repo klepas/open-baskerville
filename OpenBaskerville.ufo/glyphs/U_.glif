@@ -7,7 +7,7 @@
       <point x="435" y="229" type="move" name="top"/>
     </contour>
     <contour>
-      <point x="639" y="226" type="line" smooth="yes"/>
+      <point x="639" y="226" type="line"/>
       <point x="639" y="93"/>
       <point x="595" y="11"/>
       <point x="446" y="11" type="curve" smooth="yes"/>

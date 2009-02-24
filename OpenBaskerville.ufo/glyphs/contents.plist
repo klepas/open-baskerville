@@ -52,6 +52,8 @@
 	<string>E_grave.glif</string>
 	<key>Egrave.001</key>
 	<string>E_grave_001.glif</string>
+	<key>Eth</key>
+	<string>E_th.glif</string>
 	<key>Euro</key>
 	<string>E_uro.glif</string>
 	<key>F</key>
@@ -186,6 +188,8 @@
 	<string>asterisk.glif</string>
 	<key>at</key>
 	<string>at.glif</string>
+	<key>atilde</key>
+	<string>atilde.glif</string>
 	<key>b</key>
 	<string>b.glif</string>
 	<key>c</key>
@@ -298,6 +302,8 @@
 	<string>n.glif</string>
 	<key>nine</key>
 	<string>nine.glif</string>
+	<key>ntilde</key>
+	<string>ntilde.glif</string>
 	<key>o</key>
 	<string>o.glif</string>
 	<key>oacute</key>
@@ -322,6 +328,8 @@
 	<string>one.glif</string>
 	<key>ordfeminine</key>
 	<string>ordfeminine.glif</string>
+	<key>otilde</key>
+	<string>otilde.glif</string>
 	<key>p</key>
 	<string>p.glif</string>
 	<key>parenleft</key>
@@ -374,6 +382,8 @@
 	<string>thorn.glif</string>
 	<key>three</key>
 	<string>three.glif</string>
+	<key>tilde</key>
+	<string>tilde.glif</string>
 	<key>two</key>
 	<string>two.glif</string>
 	<key>u</key>

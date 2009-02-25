@@ -148,6 +148,8 @@
 	<string>Y_.glif</string>
 	<key>Yacute</key>
 	<string>Y_acute.glif</string>
+	<key>Ydieresis</key>
+	<string>Y_dieresis.glif</string>
 	<key>Z</key>
 	<string>Z_.glif</string>
 	<key>Zcaron</key>
@@ -192,6 +194,8 @@
 	<string>atilde.glif</string>
 	<key>b</key>
 	<string>b.glif</string>
+	<key>bullet</key>
+	<string>bullet.glif</string>
 	<key>c</key>
 	<string>c.glif</string>
 	<key>c_t</key>
@@ -274,6 +278,8 @@
 	<string>grave.glif</string>
 	<key>h</key>
 	<string>h.glif</string>
+	<key>hyphen</key>
+	<string>hyphen.glif</string>
 	<key>i</key>
 	<string>i.glif</string>
 	<key>iacute</key>
@@ -338,6 +344,8 @@
 	<string>parenright.glif</string>
 	<key>period</key>
 	<string>period.glif</string>
+	<key>periodcentered</key>
+	<string>periodcentered.glif</string>
 	<key>q</key>
 	<string>q.glif</string>
 	<key>question</key>

@@ -108,6 +108,8 @@
 	<string>O_dieresis.glif</string>
 	<key>Ograve</key>
 	<string>O_grave.glif</string>
+	<key>Oslash</key>
+	<string>O_slash.glif</string>
 	<key>Otilde</key>
 	<string>O_tilde.glif</string>
 	<key>P</key>
@@ -348,6 +350,8 @@
 	<string>one.glif</string>
 	<key>ordfeminine</key>
 	<string>ordfeminine.glif</string>
+	<key>oslash</key>
+	<string>oslash.glif</string>
 	<key>otilde</key>
 	<string>otilde.glif</string>
 	<key>p</key>

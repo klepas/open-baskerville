@@ -26,6 +26,8 @@
 	<string>A_grave.glif</string>
 	<key>Agrave.001</key>
 	<string>A_grave_001.glif</string>
+	<key>Atilde</key>
+	<string>A_tilde.glif</string>
 	<key>B</key>
 	<string>B_.glif</string>
 	<key>C</key>
@@ -90,6 +92,8 @@
 	<string>M_.glif</string>
 	<key>N</key>
 	<string>N_.glif</string>
+	<key>Ntilde</key>
+	<string>N_tilde.glif</string>
 	<key>O</key>
 	<string>O_.glif</string>
 	<key>OE</key>
@@ -102,6 +106,8 @@
 	<string>O_dieresis.glif</string>
 	<key>Ograve</key>
 	<string>O_grave.glif</string>
+	<key>Otilde</key>
+	<string>O_tilde.glif</string>
 	<key>P</key>
 	<string>P_.glif</string>
 	<key>Q</key>
@@ -202,6 +208,8 @@
 	<string>c_t.glif</string>
 	<key>caron</key>
 	<string>caron.glif</string>
+	<key>cent</key>
+	<string>cent.glif</string>
 	<key>circumflex</key>
 	<string>circumflex.glif</string>
 	<key>colon</key>

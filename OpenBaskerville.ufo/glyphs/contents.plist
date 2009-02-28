@@ -224,6 +224,8 @@
 	<string>colon.glif</string>
 	<key>comma</key>
 	<string>comma.glif</string>
+	<key>copyright</key>
+	<string>copyright.glif</string>
 	<key>d</key>
 	<string>d.glif</string>
 	<key>dieresis</key>
@@ -318,6 +320,8 @@
 	<string>k.glif</string>
 	<key>l</key>
 	<string>l.glif</string>
+	<key>longs</key>
+	<string>longs.glif</string>
 	<key>longs_t</key>
 	<string>longs_t.glif</string>
 	<key>m</key>
@@ -368,6 +372,8 @@
 	<string>period.glif</string>
 	<key>periodcentered</key>
 	<string>periodcentered.glif</string>
+	<key>perthousand</key>
+	<string>perthousand.glif</string>
 	<key>q</key>
 	<string>q.glif</string>
 	<key>question</key>

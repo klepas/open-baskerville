@@ -262,6 +262,8 @@
 	<string>egrave_001.glif</string>
 	<key>eight</key>
 	<string>eight.glif</string>
+	<key>equal</key>
+	<string>equal.glif</string>
 	<key>eth</key>
 	<string>eth.glif</string>
 	<key>exclam</key>
@@ -326,6 +328,8 @@
 	<string>longs_t.glif</string>
 	<key>m</key>
 	<string>m.glif</string>
+	<key>multiply</key>
+	<string>multiply.glif</string>
 	<key>n</key>
 	<string>n.glif</string>
 	<key>nine</key>

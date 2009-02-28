@@ -378,6 +378,8 @@
 	<string>periodcentered.glif</string>
 	<key>perthousand</key>
 	<string>perthousand.glif</string>
+	<key>plus</key>
+	<string>plus.glif</string>
 	<key>q</key>
 	<string>q.glif</string>
 	<key>question</key>

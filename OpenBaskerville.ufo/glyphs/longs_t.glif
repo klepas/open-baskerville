@@ -4,12 +4,12 @@
   <unicode hex="FB05"/>
   <outline>
     <contour>
-      <point x="333" y="88" type="line" smooth="yes"/>
-      <point x="331" y="17"/>
+      <point x="333" y="88" type="line"/>
+      <point x="333" y="17"/>
       <point x="372" y="-14"/>
       <point x="437" y="-14" type="curve" smooth="yes"/>
-      <point x="529" y="-14"/>
-      <point x="539" y="31"/>
+      <point x="514" y="-14"/>
+      <point x="532" y="15"/>
       <point x="547" y="42" type="curve"/>
       <point x="539" y="47" type="line"/>
       <point x="532" y="35"/>
@@ -22,7 +22,7 @@
       <point x="525" y="405" type="line"/>
       <point x="525" y="421" type="line"/>
       <point x="409" y="421" type="line"/>
-      <point x="409" y="545" type="line"/>
+      <point x="409" y="545" type="line" smooth="yes"/>
       <point x="409" y="646"/>
       <point x="337" y="694"/>
       <point x="240" y="694" type="curve" smooth="yes"/>

@@ -23,13 +23,13 @@
 	<key>fullName</key>
 	<string>Open Baskerville</string>
 	<key>italicAngle</key>
-	<real>0.0</real>
+	<integer>0</integer>
 	<key>menuName</key>
 	<string>Open Baskerville</string>
 	<key>msCharSet</key>
 	<integer>0</integer>
 	<key>slantAngle</key>
-	<real>-0.0</real>
+	<integer>0</integer>
 	<key>styleName</key>
 	<string>Regular</string>
 	<key>ttVendor</key>
@@ -47,7 +47,7 @@
 	<key>weightValue</key>
 	<integer>400</integer>
 	<key>widthName</key>
-	<string>Normal</string>
+	<string>Medium (normal)</string>
 	<key>xHeight</key>
 	<integer>421</integer>
 	<key>year</key>

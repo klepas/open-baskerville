@@ -241,9 +241,6 @@
 		<string>feature swsh {
   sub g i by g_i ;
 } swsh;
-
-
-
 </string>
 	</dict>
 	<key>org.robofab.postScriptHintData</key>
@@ -273,11 +270,20 @@
 				<integer>691</integer>
 			</array>
 		</array>
+		<key>familyBlues</key>
+		<array>
+		</array>
+		<key>familyOtherBlues</key>
+		<array>
+		</array>
 		<key>hStems</key>
 		<array>
 			<integer>20</integer>
 			<integer>16</integer>
 			<integer>13</integer>
+		</array>
+		<key>otherBlues</key>
+		<array>
 		</array>
 		<key>vStems</key>
 		<array>

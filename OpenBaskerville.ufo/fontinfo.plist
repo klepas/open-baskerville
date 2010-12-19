@@ -6,48 +6,85 @@
 	<integer>694</integer>
 	<key>capHeight</key>
 	<integer>676</integer>
-	<key>defaultWidth</key>
-	<integer>500</integer>
 	<key>descender</key>
 	<integer>-204</integer>
 	<key>familyName</key>
 	<string>Open Baskerville</string>
-	<key>fondID</key>
-	<integer>128</integer>
-	<key>fondName</key>
-	<string>Open Baskerville</string>
-	<key>fontName</key>
-	<string>OpenBaskerville</string>
-	<key>fontStyle</key>
-	<integer>64</integer>
-	<key>fullName</key>
-	<string>Open Baskerville</string>
 	<key>italicAngle</key>
 	<integer>0</integer>
-	<key>menuName</key>
+	<key>macintoshFONDFamilyID</key>
+	<integer>128</integer>
+	<key>macintoshFONDName</key>
 	<string>Open Baskerville</string>
-	<key>msCharSet</key>
+	<key>openTypeOS2VendorID</key>
+	<string>pyrs</string>
+	<key>openTypeOS2WeightClass</key>
+	<integer>400</integer>
+	<key>openTypeOS2WidthClass</key>
+	<integer>5</integer>
+	<key>postscriptBlueFuzz</key>
+	<integer>1</integer>
+	<key>postscriptBlueScale</key>
+	<real>0.039625</real>
+	<key>postscriptBlueShift</key>
+	<integer>7</integer>
+	<key>postscriptBlueValues</key>
+	<array>
+		<integer>-218</integer>
+		<integer>-204</integer>
+		<integer>-14</integer>
+		<integer>0</integer>
+		<integer>421</integer>
+		<integer>434</integer>
+		<integer>676</integer>
+		<integer>691</integer>
+	</array>
+	<key>postscriptDefaultWidthX</key>
+	<integer>500</integer>
+	<key>postscriptFamilyBlues</key>
+	<array>
+	</array>
+	<key>postscriptFamilyOtherBlues</key>
+	<array>
+	</array>
+	<key>postscriptFontName</key>
+	<string>OpenBaskerville</string>
+	<key>postscriptFullName</key>
+	<string>Open Baskerville</string>
+	<key>postscriptOtherBlues</key>
+	<array>
+	</array>
+	<key>postscriptSlantAngle</key>
 	<integer>0</integer>
-	<key>slantAngle</key>
-	<integer>0</integer>
+	<key>postscriptStemSnapH</key>
+	<array>
+		<integer>20</integer>
+		<integer>16</integer>
+		<integer>13</integer>
+	</array>
+	<key>postscriptStemSnapV</key>
+	<array>
+		<integer>100</integer>
+		<integer>68</integer>
+	</array>
+	<key>postscriptUniqueID</key>
+	<integer>-1</integer>
+	<key>postscriptWeightName</key>
+	<string>Normal</string>
+	<key>postscriptWindowsCharacterSet</key>
+	<integer>1</integer>
+	<key>styleMapFamilyName</key>
+	<string>Open Baskerville</string>
+	<key>styleMapStyleName</key>
+	<string>regular</string>
 	<key>styleName</key>
 	<string>Regular</string>
-	<key>ttVendor</key>
-	<string>pyrs</string>
-	<key>uniqueID</key>
-	<integer>-1</integer>
 	<key>unitsPerEm</key>
 	<integer>1000</integer>
 	<key>versionMajor</key>
 	<integer>1</integer>
 	<key>versionMinor</key>
 	<integer>0</integer>
-	<key>weightName</key>
-	<string>Normal</string>
-	<key>weightValue</key>
-	<integer>400</integer>
-	<key>widthName</key>
-	<string>Medium (normal)</string>
 	<key>xHeight</key>
 	<integer>421</integer>
 	<key>year</key>

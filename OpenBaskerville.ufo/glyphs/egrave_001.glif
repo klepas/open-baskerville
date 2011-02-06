@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="egrave.001" format="1">
-  <advance width="447"/>
-  <outline>
-    <component base="e"/>
-    <component base="grave" xOffset="57"/>
-  </outline>
-</glyph>

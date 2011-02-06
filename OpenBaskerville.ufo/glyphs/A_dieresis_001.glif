@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<glyph name="Adieresis.001" format="1">
-  <advance width="720"/>
-  <outline>
-    <component base="A"/>
-    <component base="dieresis" xOffset="200" yOffset="229"/>
-  </outline>
-</glyph>

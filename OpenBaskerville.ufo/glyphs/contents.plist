@@ -12,20 +12,12 @@
 	<string>A_E_.glif</string>
 	<key>Aacute</key>
 	<string>A_acute.glif</string>
-	<key>Aacute.001</key>
-	<string>A_acute_001.glif</string>
 	<key>Acircumflex</key>
 	<string>A_circumflex.glif</string>
-	<key>Acircumflex.001</key>
-	<string>A_circumflex_001.glif</string>
 	<key>Adieresis</key>
 	<string>A_dieresis.glif</string>
-	<key>Adieresis.001</key>
-	<string>A_dieresis_001.glif</string>
 	<key>Agrave</key>
 	<string>A_grave.glif</string>
-	<key>Agrave.001</key>
-	<string>A_grave_001.glif</string>
 	<key>Aring</key>
 	<string>A_ring.glif</string>
 	<key>Atilde</key>
@@ -42,20 +34,12 @@
 	<string>E_.glif</string>
 	<key>Eacute</key>
 	<string>E_acute.glif</string>
-	<key>Eacute.001</key>
-	<string>E_acute_001.glif</string>
 	<key>Ecircumflex</key>
 	<string>E_circumflex.glif</string>
-	<key>Ecircumflex.001</key>
-	<string>E_circumflex_001.glif</string>
 	<key>Edieresis</key>
 	<string>E_dieresis.glif</string>
-	<key>Edieresis.001</key>
-	<string>E_dieresis_001.glif</string>
 	<key>Egrave</key>
 	<string>E_grave.glif</string>
-	<key>Egrave.001</key>
-	<string>E_grave_001.glif</string>
 	<key>Eth</key>
 	<string>E_th.glif</string>
 	<key>Euro</key>
@@ -70,20 +54,12 @@
 	<string>I_.glif</string>
 	<key>Iacute</key>
 	<string>I_acute.glif</string>
-	<key>Iacute.001</key>
-	<string>I_acute_001.glif</string>
 	<key>Icircumflex</key>
 	<string>I_circumflex.glif</string>
-	<key>Icircumflex.001</key>
-	<string>I_circumflex_001.glif</string>
 	<key>Idieresis</key>
 	<string>I_dieresis.glif</string>
-	<key>Idieresis.001</key>
-	<string>I_dieresis_001.glif</string>
 	<key>Igrave</key>
 	<string>I_grave.glif</string>
-	<key>Igrave.001</key>
-	<string>I_grave_001.glif</string>
 	<key>J</key>
 	<string>J_.glif</string>
 	<key>K</key>
@@ -130,20 +106,12 @@
 	<string>U_.glif</string>
 	<key>Uacute</key>
 	<string>U_acute.glif</string>
-	<key>Uacute.001</key>
-	<string>U_acute_001.glif</string>
 	<key>Ucircumflex</key>
 	<string>U_circumflex.glif</string>
-	<key>Ucircumflex.001</key>
-	<string>U_circumflex_001.glif</string>
 	<key>Udieresis</key>
 	<string>U_dieresis.glif</string>
-	<key>Udieresis.001</key>
-	<string>U_dieresis_001.glif</string>
 	<key>Ugrave</key>
 	<string>U_grave.glif</string>
-	<key>Ugrave.001</key>
-	<string>U_grave_001.glif</string>
 	<key>V</key>
 	<string>V_.glif</string>
 	<key>W</key>
@@ -164,26 +132,16 @@
 	<string>a.glif</string>
 	<key>aacute</key>
 	<string>aacute.glif</string>
-	<key>aacute.001</key>
-	<string>aacute_001.glif</string>
 	<key>acircumflex</key>
 	<string>acircumflex.glif</string>
-	<key>acircumflex.001</key>
-	<string>acircumflex_001.glif</string>
 	<key>acute</key>
 	<string>acute.glif</string>
 	<key>adieresis</key>
 	<string>adieresis.glif</string>
-	<key>adieresis.001</key>
-	<string>adieresis_001.glif</string>
 	<key>ae</key>
 	<string>ae.glif</string>
 	<key>agrave</key>
 	<string>agrave.glif</string>
-	<key>agrave.001</key>
-	<string>agrave_001.glif</string>
-	<key>agrave.002</key>
-	<string>agrave_002.glif</string>
 	<key>ampersand</key>
 	<string>ampersand.glif</string>
 	<key>aring</key>
@@ -238,20 +196,12 @@
 	<string>e.glif</string>
 	<key>eacute</key>
 	<string>eacute.glif</string>
-	<key>eacute.001</key>
-	<string>eacute_001.glif</string>
 	<key>ecircumflex</key>
 	<string>ecircumflex.glif</string>
-	<key>ecircumflex.001</key>
-	<string>ecircumflex_001.glif</string>
 	<key>edieresis</key>
 	<string>edieresis.glif</string>
-	<key>edieresis.001</key>
-	<string>edieresis_001.glif</string>
 	<key>egrave</key>
 	<string>egrave.glif</string>
-	<key>egrave.001</key>
-	<string>egrave_001.glif</string>
 	<key>eight</key>
 	<string>eight.glif</string>
 	<key>equal</key>
@@ -332,22 +282,14 @@
 	<string>o.glif</string>
 	<key>oacute</key>
 	<string>oacute.glif</string>
-	<key>oacute.001</key>
-	<string>oacute_001.glif</string>
 	<key>ocircumflex</key>
 	<string>ocircumflex.glif</string>
-	<key>ocircumflex.001</key>
-	<string>ocircumflex_001.glif</string>
 	<key>odieresis</key>
 	<string>odieresis.glif</string>
-	<key>odieresis.001</key>
-	<string>odieresis_001.glif</string>
 	<key>oe</key>
 	<string>oe.glif</string>
 	<key>ograve</key>
 	<string>ograve.glif</string>
-	<key>ograve.001</key>
-	<string>ograve_001.glif</string>
 	<key>one</key>
 	<string>one.glif</string>
 	<key>ordfeminine</key>
@@ -422,20 +364,12 @@
 	<string>u.glif</string>
 	<key>uacute</key>
 	<string>uacute.glif</string>
-	<key>uacute.001</key>
-	<string>uacute_001.glif</string>
 	<key>ucircumflex</key>
 	<string>ucircumflex.glif</string>
-	<key>ucircumflex.001</key>
-	<string>ucircumflex_001.glif</string>
 	<key>udieresis</key>
 	<string>udieresis.glif</string>
-	<key>udieresis.001</key>
-	<string>udieresis_001.glif</string>
 	<key>ugrave</key>
 	<string>ugrave.glif</string>
-	<key>ugrave.001</key>
-	<string>ugrave_001.glif</string>
 	<key>v</key>
 	<string>v.glif</string>
 	<key>w</key>
@@ -446,12 +380,8 @@
 	<string>y.glif</string>
 	<key>yacute</key>
 	<string>yacute.glif</string>
-	<key>yacute.001</key>
-	<string>yacute_001.glif</string>
 	<key>ydieresis</key>
 	<string>ydieresis.glif</string>
-	<key>ydieresis.001</key>
-	<string>ydieresis_001.glif</string>
 	<key>z</key>
 	<string>z.glif</string>
 	<key>zcaron</key>

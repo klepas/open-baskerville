@@ -122,10 +122,6 @@
 	<string>S_.glif</string>
 	<key>Scaron</key>
 	<string>S_caron.glif</string>
-	<key>Scaron.001</key>
-	<string>S_caron_001.glif</string>
-	<key>Scaron.002</key>
-	<string>S_caron_002.glif</string>
 	<key>T</key>
 	<string>T_.glif</string>
 	<key>Thorn</key>
@@ -164,10 +160,6 @@
 	<string>Z_.glif</string>
 	<key>Zcaron</key>
 	<string>Z_caron.glif</string>
-	<key>Zcaron.001</key>
-	<string>Z_caron_001.glif</string>
-	<key>Zcaron.002</key>
-	<string>Z_caron_002.glif</string>
 	<key>a</key>
 	<string>a.glif</string>
 	<key>aacute</key>
@@ -406,10 +398,6 @@
 	<string>s_t.glif</string>
 	<key>scaron</key>
 	<string>scaron.glif</string>
-	<key>scaron.001</key>
-	<string>scaron_001.glif</string>
-	<key>scaron.002</key>
-	<string>scaron_002.glif</string>
 	<key>semicolon</key>
 	<string>semicolon.glif</string>
 	<key>seven</key>
@@ -468,10 +456,6 @@
 	<string>z.glif</string>
 	<key>zcaron</key>
 	<string>zcaron.glif</string>
-	<key>zcaron.001</key>
-	<string>zcaron_001.glif</string>
-	<key>zcaron.002</key>
-	<string>zcaron_002.glif</string>
 	<key>zero</key>
 	<string>zero.glif</string>
 </dict>

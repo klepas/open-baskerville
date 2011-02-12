@@ -1,0 +1,82 @@
+
+# GPOS 
+
+
+lookup kernHorizontalKerninginLatinloo {
+  lookupflag 0;
+    pos \V \A -179;
+    pos \a \y -3;
+    pos \a \w -7;
+    pos \a \s 15;
+    pos \b \period -15;
+    pos \d \y -4;
+    pos \d \w -23;
+    pos \e \period -10;
+    pos \f \s 20;
+    pos \g \z 5;
+    pos \g \p 10;
+    pos \g \g 10;
+    pos \g \b 10;
+    pos \h \y -35;
+    pos \h \u -5;
+    pos \i \t -5;
+    pos \i \quoteright -10;
+    pos \i \j -24;
+    pos \j \s 15;
+    pos \j \j 24;
+    pos \k \z 35;
+    pos \k \a 5;
+    pos \l \u -5;
+    pos \m \u -5;
+    pos \n \y -35;
+    pos \n \u -4;
+    pos \o \period -15;
+    pos \p \t -8;
+    pos \quoteright \d -40;
+    pos \s \w -10;
+    pos \s \v -7;
+    pos \s \u -3;
+    pos \s \t -15;
+    pos \t \z 17;
+    pos \t \o -8;
+    pos \t \d 5;
+    pos \y \l -20;
+    pos \y \k -5;
+    pos \y \h -20;
+    pos \y \b -43;
+} kernHorizontalKerninginLatinloo;
+
+feature kern {
+
+  script latn;
+     language dflt ;
+      lookup kernHorizontalKerninginLatinloo;
+} kern;
+
+@GDEF_Simple = [\.null \A \AE \Aacute \Acircumflex \Adieresis \Agrave \Aring \Atilde 
+	\B \C \CR \D \E \Eacute \Ecircumflex \Edieresis \Egrave \Eth \Euro \F \G \H \I \Iacute 
+	\Icircumflex \Idieresis \Igrave \J \K \L \M \N \Ntilde \O \OE \Oacute \Ocircumflex 
+	\Odieresis \Ograve \Oslash \Otilde \P \Q \R \S \Scaron \T \Thorn \U \Uacute 
+	\Ucircumflex \Udieresis \Ugrave \V \W \X \Y \Yacute \Ydieresis \Z \Zcaron \a \aacute 
+	\acircumflex \acute \adieresis \ae \agrave \ampersand \aring \asciicircum 
+	\asciitilde \asterisk \at \atilde \b \bullet \c \c_t \caron \cent \circumflex 
+	\colon \comma \copyright \d \dieresis \dollar \dotlessi \dotlessiacute 
+	\dotlessicircumflex \dotlessidieresis \dotlessigrave \e \eacute \ecircumflex 
+	\edieresis \egrave \eight \equal \eth \exclam \exclamdown \f \f_f_j \f_j \ff \ffi 
+	\ffl \fi \five \fl \four \g \g_i \germandbls \grave \h \hyphen \i \iacute 
+	\icircumflex \idieresis \igrave \ij \interrobang \j \k \l \longs \longs_t \m 
+	\multiply \n \nine \ntilde \o \oacute \ocircumflex \odieresis \oe \ograve \one 
+	\ordfeminine \oslash \otilde \p \parenleft \parenright \percent \period 
+	\periodcentered \perthousand \plus \q \question \questiondown \quotedblleft 
+	\quotedblright \quoteleft \quoteright \r \registered \ring \s \s_t \scaron 
+	\semicolon \seven \six \space \sterling \t \thorn \three \tilde \two \u \uacute 
+	\ucircumflex \udieresis \ugrave \v \w \x \y \yacute \ydieresis \z \zcaron \zero ];
+@GDEF_Ligature = [];
+@GDEF_Mark = [];
+@GDEF_Component = [];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple @GDEF_Ligature @GDEF_Mark @GDEF_Component;
+
+} GDEF;
+

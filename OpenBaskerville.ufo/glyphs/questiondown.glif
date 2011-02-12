@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="questiondown" format="1">
   <advance width="461"/>
-  <unicode hex="00BF"/>
+  <unicode hex="00bf"/>
   <outline>
+    <component base="period" xOffset="231" yOffset="511"/>
     <contour>
-      <point x="326" y="281" type="line"/>
+      <point x="326" y="281" type="line" smooth="no"/>
       <point x="301" y="306"/>
       <point x="282" y="313"/>
       <point x="233" y="313" type="curve" smooth="yes"/>
@@ -34,11 +35,10 @@
       <point x="234" y="293" type="curve" smooth="yes"/>
       <point x="295" y="293"/>
       <point x="336" y="258"/>
-      <point x="336" y="165" type="curve"/>
-      <point x="357" y="165" type="line"/>
-      <point x="357" y="450" type="line"/>
-      <point x="326" y="450" type="line"/>
+      <point x="336" y="165" type="curve" smooth="no"/>
+      <point x="357" y="165" type="line" smooth="no"/>
+      <point x="357" y="450" type="line" smooth="no"/>
+      <point x="326" y="450" type="line" smooth="no"/>
     </contour>
-    <component base="period" xOffset="231" yOffset="511"/>
   </outline>
 </glyph>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ring" format="1">
   <advance width="334"/>
-  <unicode hex="02DA"/>
+  <unicode hex="02da"/>
   <outline>
     <contour>
       <point x="97" y="563" type="curve" smooth="yes"/>

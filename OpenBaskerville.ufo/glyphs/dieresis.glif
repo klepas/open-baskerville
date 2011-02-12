@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dieresis" format="1">
   <advance width="345"/>
-  <unicode hex="00A8"/>
+  <unicode hex="00a8"/>
   <outline>
     <contour>
-      <point x="172" y="0" type="move" name="_top"/>
+      <point x="172" y="0" type="move" smooth="yes"/>
     </contour>
     <contour>
       <point x="46" y="618" type="curve" smooth="yes"/>

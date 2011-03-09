@@ -24,6 +24,7 @@ desc "Install OpenType Fonts"
 task :install => "OpenBaskerville.otf" do
   if  RUBY_PLATFORM.include? 'darwin'
     sh "cp *.otf ~/Library/Fonts/"
+    puts "installed"
   else
     puts "Not implemented yet for this platform.
 Please contribute patches!
@@ -35,4 +36,18 @@ end
 desc "Diagnose font build environment"
 task :diagnostics do
   sh 'python ./tools/ufo2otf/diagnostics.py'
+end
+
+desc "Generate a FONTLOG.txt"
+task :fontlog => :_has_git do
+  sh "python ./tools/FONTLOG.py > FONTLOG.txt"
+  puts "FONTLOG.txt generated"
+end
+
+# Check whether we are in the git repository
+task :_has_git do
+   unless File.directory? '.git'
+     abort "This rake task needs to run inside a git working tree:
+See http://openbaskerville.org/klepas on what git is and how to get it."
+   end
 end

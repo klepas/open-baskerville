@@ -6,6 +6,8 @@
 	<integer>694</integer>
 	<key>capHeight</key>
 	<integer>676</integer>
+	<key>copyright</key>
+	<string>(c) 2008 James Puckett, (c) 2009 Rob Mientjes</string>
 	<key>descender</key>
 	<integer>-204</integer>
 	<key>familyName</key>
@@ -48,6 +50,10 @@ We welcome contributions! You can check out the issue tracker to see what we are
 
 Thanks!
 </string>
+	<key>openTypeNameDesigner</key>
+	<string>Isaac Moore, James Puckett, Rob Mientjes</string>
+	<key>openTypeNameDesignerURL</key>
+	<string>http://www.dunwichtype.com/</string>
 	<key>openTypeNameLicense</key>
 	<string>The Open Baskerville font files are dual-licensed under the GNU GPL version 3 (GNU General Public License) and the SIL Open Font License (OFL). See 'COPYING-GPLv3.txt' and 'COPYING-OFL.txt' respectively. There is also a FAQ on the OFL (see 'COPYING-OFL-FAQ.txt').
 
@@ -101,6 +107,14 @@ This license becomes null and void if any of the above conditions are not met.
 
 DISCLAIMER
 THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.</string>
+	<key>openTypeNameLicenseURL</key>
+	<string>http://scripts.sil.org/OFL</string>
+	<key>openTypeNameManufacturer</key>
+	<string>The Open Baskerville Project</string>
+	<key>openTypeNameManufacturerURL</key>
+	<string>http://klepas.org/openbaskerville</string>
+	<key>openTypeNameVersion</key>
+	<string>0.0.x development series</string>
 	<key>openTypeOS2VendorID</key>
 	<string>pyrs</string>
 	<key>openTypeOS2WeightClass</key>
@@ -169,7 +183,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
 	<key>versionMajor</key>
 	<integer>1</integer>
 	<key>versionMinor</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>xHeight</key>
 	<integer>421</integer>
 	<key>year</key>

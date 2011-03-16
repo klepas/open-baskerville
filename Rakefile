@@ -21,7 +21,7 @@ file 'OpenBaskerville.otf' => UFO do
 end
 
 desc "Install OpenType Fonts"
-task :install => "OpenBaskerville.otf" do
+task :install => :_has_otf_files do
   if  RUBY_PLATFORM.include? 'darwin'
     sh "cp *.otf ~/Library/Fonts/"
     puts "installed"
@@ -42,6 +42,14 @@ desc "Generate a FONTLOG.txt"
 task :fontlog => :_has_git do
   sh "python ./tools/FONTLOG.py > FONTLOG.txt"
   puts "FONTLOG.txt generated"
+end
+
+# Check if there are otf files
+task :_has_otf_files do
+  if Dir["*.otf"].length == 0
+    abort "No otf files found. You can generate a working copy by running
+''rake''."
+  end
 end
 
 # Check whether we are in the git repository

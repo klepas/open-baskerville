@@ -18,6 +18,8 @@
 	<string>A_dieresis.glif</string>
 	<key>Agrave</key>
 	<string>A_grave.glif</string>
+	<key>Aogonek</key>
+	<string>A_ogonek.glif</string>
 	<key>Aring</key>
 	<string>A_ring.glif</string>
 	<key>Atilde</key>
@@ -40,6 +42,8 @@
 	<string>E_dieresis.glif</string>
 	<key>Egrave</key>
 	<string>E_grave.glif</string>
+	<key>Eogonek</key>
+	<string>E_ogonek.glif</string>
 	<key>Eth</key>
 	<string>E_th.glif</string>
 	<key>Euro</key>
@@ -60,6 +64,8 @@
 	<string>I_dieresis.glif</string>
 	<key>Igrave</key>
 	<string>I_grave.glif</string>
+	<key>Iogonek</key>
+	<string>I_ogonek.glif</string>
 	<key>J</key>
 	<string>J_.glif</string>
 	<key>K</key>
@@ -84,6 +90,8 @@
 	<string>O_dieresis.glif</string>
 	<key>Ograve</key>
 	<string>O_grave.glif</string>
+	<key>Oogonek</key>
+	<string>O_ogonek.glif</string>
 	<key>Oslash</key>
 	<string>O_slash.glif</string>
 	<key>Otilde</key>
@@ -112,6 +120,8 @@
 	<string>U_dieresis.glif</string>
 	<key>Ugrave</key>
 	<string>U_grave.glif</string>
+	<key>Uogonek</key>
+	<string>U_ogonek.glif</string>
 	<key>V</key>
 	<string>V_.glif</string>
 	<key>W</key>
@@ -144,6 +154,8 @@
 	<string>agrave.glif</string>
 	<key>ampersand</key>
 	<string>ampersand.glif</string>
+	<key>aogonek</key>
+	<string>aogonek.glif</string>
 	<key>aring</key>
 	<string>aring.glif</string>
 	<key>asciicircum</key>
@@ -204,6 +216,8 @@
 	<string>egrave.glif</string>
 	<key>eight</key>
 	<string>eight.glif</string>
+	<key>eogonek</key>
+	<string>eogonek.glif</string>
 	<key>equal</key>
 	<string>equal.glif</string>
 	<key>eth</key>
@@ -258,6 +272,8 @@
 	<string>ij.glif</string>
 	<key>interrobang</key>
 	<string>interrobang.glif</string>
+	<key>iogonek</key>
+	<string>iogonek.glif</string>
 	<key>j</key>
 	<string>j.glif</string>
 	<key>k</key>
@@ -288,10 +304,14 @@
 	<string>odieresis.glif</string>
 	<key>oe</key>
 	<string>oe.glif</string>
+	<key>ogonek</key>
+	<string>ogonek.glif</string>
 	<key>ograve</key>
 	<string>ograve.glif</string>
 	<key>one</key>
 	<string>one.glif</string>
+	<key>oogonek</key>
+	<string>oogonek.glif</string>
 	<key>ordfeminine</key>
 	<string>ordfeminine.glif</string>
 	<key>oslash</key>
@@ -370,6 +390,8 @@
 	<string>udieresis.glif</string>
 	<key>ugrave</key>
 	<string>ugrave.glif</string>
+	<key>uogonek</key>
+	<string>uogonek.glif</string>
 	<key>v</key>
 	<string>v.glif</string>
 	<key>w</key>

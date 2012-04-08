@@ -37,10 +37,17 @@
       <point x="302" y="434"/>
     </contour>
     <contour>
-      <point x="222" y="-78" type="line"/>
-      <point x="250" y="-78" type="line"/>
-      <point x="250" y="495" type="line"/>
-      <point x="222" y="495" type="line"/>
+      <point x="192" y="-68" type="line"/>
+      <point x="210" y="-68" type="line"/>
+      <point x="280" y="495" type="line"/>
+      <point x="261" y="495" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.layerData</key>
+      <dict>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

@@ -6,4 +6,11 @@
     <component base="S"/>
     <component base="caron" xOffset="91" yOffset="229"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.layerData</key>
+      <dict>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

@@ -7,6 +7,8 @@
 # the *corresponding* otf should be regenerated. This allows for additional
 # font styles, and for the reuse of this Rakefile across font projects.
 
+@project_slug = "OpenBaskerville"
+
 UFO = FileList.new('OpenBaskerville.ufo/**/*.*')
 
 task :default => "OpenBaskerville.otf"
@@ -37,8 +39,8 @@ task :diagnostics do
 end
 
 desc "Generate a FONTLOG.txt"
-task :fontlog => :_has_git do
-  sh "python ./tools/FONTLOG.py > FONTLOG.txt"
+task :fontlog => :_build_folder do
+  sh "python ./tools/FONTLOG.py > #{@build_folder}/FONTLOG.txt"
   puts "FONTLOG.txt generated"
 end
 
@@ -48,6 +50,12 @@ task :_has_otf_files do
     abort "No otf files found. You can generate a working copy by running
 ''rake''. You can build a release by running ''rake release''."
   end
+end
+
+# Make the build folder
+task :_build_folder => :_version_number do
+  @build_folder = 'build/' + @release_slug
+  sh "mkdir -p #{@build_folder}"
 end
 
 # Check whether we are in the git repository
@@ -79,6 +87,7 @@ task :_version_number => :_has_git do
     abort "Unable to automatically generate patch version number"
   end
   @version_number_short = @version_number.split[0]
+  @release_slug = @project_slug + '-' + @version_number_short
   puts "Generated version number #{@version_number}"
 end
 
@@ -87,9 +96,11 @@ task :_nokogiri do
 end
 
 # Bake this version number into the UFO (and therefore, into generated OTF’s)
-task :_bake_version_number => [:_version_number, :_nokogiri] do
+task :_bake_version_number => [:_build_folder, :_nokogiri] do
 # This would be cleaner to do with RoboFab, but Rakefiles need Ruby :)
-  f = File.open("OpenBaskerville.ufo/fontinfo.plist","r")
+  
+  sh "cp -r OpenBaskerville.ufo #{@build_folder}/"
+  f = File.open("#{@build_folder}/OpenBaskerville.ufo/fontinfo.plist","r")
   doc = Nokogiri::XML(f)
   f.close
   keys = doc.css("dict key")
@@ -105,7 +116,7 @@ task :_bake_version_number => [:_version_number, :_nokogiri] do
       node.next_element.content += @version_number_short
     end
   end
-  g = File.open("OpenBaskerville.ufo/fontinfo.plist","w")
+  g = File.open("#{@build_folder}/OpenBaskerville.ufo/fontinfo.plist","w")
   g.write(doc)
   g.close
   if success
@@ -115,9 +126,22 @@ task :_bake_version_number => [:_version_number, :_nokogiri] do
   end
 end
 
+# copy various other files intended for the package
+task :_bundle_for_release => :_build_folder do
+  # this should be with a file list defined in the top of the file
+  sh "cp *.txt #{@build_folder}/"
+end
+
 desc "Generate an OTF with proper version number in filename and metadata"
-task :release => [:_head_clean, :_bake_version_number, :fontlog] do
+task :release => [:_head_clean, :_bake_version_number, :fontlog, :_bundle_for_release] do
   puts "Generating otf.."
-  sh "python ./tools/ufo2otf.py OpenBaskerville.ufo OpenBaskerville-#{@version_number_short}.otf"
+  sh "python ./tools/ufo2otf.py #{@build_folder}/OpenBaskerville.ufo #{@build_folder}/OpenBaskerville-#{@version_number_short}.otf"
   puts "Built release #{@version_number_short}!"
 end
+
+desc "Generate a zip"
+task :package => :release do
+  sh "zip -r #{@release_slug}.zip #{@build_folder}"
+  puts "generated #{@release_slug}.zip"
+end
+

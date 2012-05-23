@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-feature onum {
-  sub zero by zero.oldstyle  ;
-  sub one by one.oldstyle  ;
-  sub two by two.oldstyle  ;
-  sub three by three.oldstyle  ;
-  sub four by four.oldstyle  ;
-  sub five by five.oldstyle  ;
-  sub six by six.oldstyle  ;
-  sub seven by seven.oldstyle  ;
-  sub eight by eight.oldstyle  ;
-  sub nine by nine.oldstyle  ;
-} onum;
-=======
 languagesystem DFLT dflt;
 
 # feature onum {
@@ -26,7 +12,6 @@ languagesystem DFLT dflt;
 #   sub eight by eight.oldstyle  ;
 #   sub nine by nine.oldstyle  ;
 # } onum;
->>>>>>> upstream/master
 
 feature dlig {
   sub c t by c_t;

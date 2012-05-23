@@ -211,6 +211,7 @@
 		<string>g_i</string>
 		<string>registered</string>
 	</array>
+<<<<<<< HEAD
 	<key>public.glyphOrder</key>
 	<array>
 		<string>space</string>
@@ -819,5 +820,7 @@
 		<string>s_t</string>
 		<string>.notdef</string>
 	</array>
+=======
+>>>>>>> upstream/master
 </dict>
 </plist>

@@ -18,8 +18,11 @@
 	<string>A_dieresis.glif</string>
 	<key>Agrave</key>
 	<string>A_grave.glif</string>
+<<<<<<< HEAD
+=======
 	<key>Aogonek</key>
 	<string>A_ogonek.glif</string>
+>>>>>>> upstream/master
 	<key>Aring</key>
 	<string>A_ring.glif</string>
 	<key>Atilde</key>
@@ -42,8 +45,11 @@
 	<string>E_dieresis.glif</string>
 	<key>Egrave</key>
 	<string>E_grave.glif</string>
+<<<<<<< HEAD
+=======
 	<key>Eogonek</key>
 	<string>E_ogonek.glif</string>
+>>>>>>> upstream/master
 	<key>Eth</key>
 	<string>E_th.glif</string>
 	<key>Euro</key>
@@ -64,8 +70,11 @@
 	<string>I_dieresis.glif</string>
 	<key>Igrave</key>
 	<string>I_grave.glif</string>
+<<<<<<< HEAD
+=======
 	<key>Iogonek</key>
 	<string>I_ogonek.glif</string>
+>>>>>>> upstream/master
 	<key>J</key>
 	<string>J_.glif</string>
 	<key>K</key>
@@ -120,8 +129,11 @@
 	<string>U_dieresis.glif</string>
 	<key>Ugrave</key>
 	<string>U_grave.glif</string>
+<<<<<<< HEAD
+=======
 	<key>Uogonek</key>
 	<string>U_ogonek.glif</string>
+>>>>>>> upstream/master
 	<key>V</key>
 	<string>V_.glif</string>
 	<key>W</key>
@@ -390,8 +402,11 @@
 	<string>udieresis.glif</string>
 	<key>ugrave</key>
 	<string>ugrave.glif</string>
+<<<<<<< HEAD
+=======
 	<key>uogonek</key>
 	<string>uogonek.glif</string>
+>>>>>>> upstream/master
 	<key>v</key>
 	<string>v.glif</string>
 	<key>w</key>

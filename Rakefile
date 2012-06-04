@@ -1,23 +1,46 @@
-# Todo: this uses posix specific path seperator ('/'),
-# so it won’t work on Windows.
+# Rakefile for Font Development
+# Eric Schrijver
+# Requires Git > 1.7.0 and FontForge-Python
+#
+# This won’t work on Windows: it uses quite a lot of unix utilities.
 
-# Right now, OpenBaskerville.otf is regenerated when a file inside
-# OpenBaskerville.ufo is changed.
-# This should be: if the contents of *any* UFO folder changes,
-# the *corresponding* otf should be regenerated. This allows for additional
-# font styles, and for the reuse of this Rakefile across font projects.
+def shortest_prefix(items)
+  # Shortest prefix shared by an array of strings
+  # http://www.ruby-forum.com/topic/120401#538016
+  s = []
+  a ,b = items.max.split(//), items.min.split(//)
+  a.each_with_index{|x,y|s << y if x != b[y]}
+  s.empty? ? a.join() : a[0...s[0]].join()
+end
 
-@project_slug = "OpenBaskerville"
+def args(items)
+  # Join a list of filenames for use as command line arguments
+  '"' + items.join('" "') + '"'
+end
 
-UFO = FileList.new('OpenBaskerville.ufo/**/*.*')
+@ufos = Dir.glob('*.ufo')
 
-task :default => "OpenBaskerville.otf"
+# Normally, the Rakefile should automatically figure out a common fileslug
+# to use for your zipfiles etcetera, based on the common prefix of your UFO’s.
+# (see rake task: :_get_slug)
+# Alternatively, manually specify here:
 
-desc "Generate OpenType Font"
-file 'OpenBaskerville.otf' => UFO do
+@project_slug = ""
+
+task :default => :otf
+
+desc "Generate OpenType Fonts"
+task :otf do
   puts "Generating otf.."
-  sh "python ./tools/ufo2otf.py OpenBaskerville.ufo"
+  sh "python ./tools/ufo2otf.py #{args @ufos}"
   puts "Done!"
+# This is not extremely efficient, since the otf is going to be created
+# regardless of whether the UFO has changed or not.
+# I used to check for a filelist like this:
+# file 'OpenBaskerville.otf' => FileList.new('OpenBaskerville.ufo/**/*.*') do
+#   etc
+# end
+# Do you think it is worth the hassle to recreate that for *.ufo?
 end
 
 desc "Install OpenType Fonts"
@@ -54,9 +77,27 @@ end
 
 # Make the build folder
 task :_build_folder => :_version_number do
-  @build_folder = 'build/' + @release_slug
-  sh "mkdir -p #{@build_folder}"
-  sh "cp -r OpenBaskerville.ufo #{@build_folder}/#{@release_ufo}"
+  @ufos.each do |ufo|
+    release_ufo = ufo.sub('.ufo', '-' + @version_number_short + '.ufo')
+    @build_folder = 'build/' + @release_slug
+    sh "mkdir -p #{@build_folder}"
+    sh "cp -r OpenBaskerville.ufo #{@build_folder}/#{release_ufo}"
+  end
+end
+
+# Determine the project file slug
+task :_get_slug do
+  # This will take the prefix all your UFO’s have in common as the project slug
+  # (Which is the name for the zip archive etc.)
+  # Unless another slug is already specified in the top of the Rakefile
+  if @project_slug == ""
+    @project_slug = shortest_prefix(@ufos).sub(' ','_').sub('.ufo','')
+  end
+  if @project_slug == ""
+    abort "No project file slug could be determined automatically.
+Please specify in top of the Rakefile."
+  end
+  puts "Project slug is: #{@project_slug}"
 end
 
 # Check whether we are in the git repository
@@ -79,7 +120,7 @@ end
 
 # Derive a version number from the current tag + number of commits (patch
 # version)
-task :_version_number => :_has_git do
+task :_version_number => [:_has_git, :_get_slug] do
   git_describe = `git describe`.strip
   # v0.0.0-49-gb5cc6c0 -> 0.0.49 (gb5cc6c0)
   # http://www.rubular.com/r/kqgRzxS8G9
@@ -89,7 +130,6 @@ task :_version_number => :_has_git do
   end
   @version_number_short = @version_number.split[0]
   @release_slug = @project_slug + '-' + @version_number_short
-  @release_ufo = @release_slug + '.ufo'
   puts "Generated version number #{@version_number}"
 end
 
@@ -100,30 +140,32 @@ end
 # Bake this version number into the UFO (and therefore, into generated OTF’s)
 task :_bake_version_number => [:_build_folder, :_nokogiri] do
 # This would be cleaner to do with RoboFab, but Rakefiles need Ruby :)
-  
-  f = File.open("#{@build_folder}/#{@release_ufo}/fontinfo.plist","r")
-  doc = Nokogiri::XML(f)
-  f.close
-  keys = doc.css("dict key")
-  success = false
-  keys.each do |node|
-    if node.content == "openTypeNameVersion"
-      node.next_element.content = @version_number
-      success = true
-    elsif  ["familyName","macintoshFONDName","postscriptFullName", "styleMapFamilyName"].include?(node.content)
-      node.next_element.content += ' ' + @version_number_short
-    elsif node.content == "postscriptFontName"
-      #No spaces in postscriptFontName
-      node.next_element.content += @version_number_short
+  release_ufos = Dir.glob("#{@build_folder}/*.ufo")
+  release_ufos.each do |release_ufo|
+    f = File.open("#{release_ufo}/fontinfo.plist","r")
+    doc = Nokogiri::XML(f)
+    f.close
+    keys = doc.css("dict key")
+    success = false
+    keys.each do |node|
+      if node.content == "openTypeNameVersion"
+        node.next_element.content = @version_number
+        success = true
+      elsif  ["familyName","macintoshFONDName","postscriptFullName", "styleMapFamilyName"].include?(node.content)
+        node.next_element.content += ' ' + @version_number_short
+      elsif node.content == "postscriptFontName"
+        #No spaces in postscriptFontName
+        node.next_element.content += @version_number_short
+      end
     end
-  end
-  g = File.open("#{@build_folder}/#{@release_ufo}/fontinfo.plist","w")
-  g.write(doc)
-  g.close
-  if success
-    puts "Baked the generated version number into the UFO"
-  else
-    abort "Failed to bake the version number into the UFO"
+    g = File.open("#{release_ufo}/fontinfo.plist","w")
+    g.write(doc)
+    g.close
+    if success
+      puts "Baked the generated version number into #{release_ufo}"
+    else
+      abort "Failed to bake the version number into #{release_ufo}"
+    end
   end
 end
 
@@ -135,8 +177,9 @@ end
 
 desc "Generate an OTF with proper version number in filename and metadata"
 task :release => [:_head_clean, :_bake_version_number, :fontlog, :_bundle_for_release] do
+  release_ufos = Dir.glob("#{@build_folder}/*.ufo")
   puts "Generating otf.."
-  sh "python ./tools/ufo2otf.py #{@build_folder}/#{@release_ufo}"
+  sh "python ./tools/ufo2otf.py #{args release_ufos}"
   puts "Built release #{@version_number_short}!"
 end
 

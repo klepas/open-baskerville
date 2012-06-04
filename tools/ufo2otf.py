@@ -7,14 +7,26 @@
 
 """Calls the compiler.
 """
+from ufo2otf import Compiler
 
-from sys import argv, exit
-import ufo2otf
+def console():
+    import argparse
+    from sys import exit
 
-if 3 <= len(argv) <= 4:
-    args = argv[1:]
-    compiler = ufo2otf.Compiler(*args)
-    compiler.compile()
-else:
-    print """usage: ./ufo2otf.py infile.ufo outfile.otf [compiler]
-compiler: fontforge or afdko"""
+    parser = argparse.ArgumentParser()
+    parser.add_argument("infiles", help="The source UFO files", nargs='+')
+    
+    parser.add_argument("--webfonts", help="Generate webfonts in a ./webfonts subfolder",
+                    action="store_true")
+    parser.add_argument("--afdko", help="Generate the OTF with Adobe Font Development Kit for Opentype",
+                    action="store_true")
+    args = parser.parse_args()
+    
+    if args.webfonts and args.afdko:
+        exit("Can not generate webfonts through the AFDKO, exiting.")
+
+    c = Compiler(args.infiles, args.webfonts, args.afdko)
+    c.compile()
+
+if __name__ == "__main__":
+    console()

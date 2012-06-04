@@ -16,7 +16,7 @@ task :default => "OpenBaskerville.otf"
 desc "Generate OpenType Font"
 file 'OpenBaskerville.otf' => UFO do
   puts "Generating otf.."
-  sh "python ./tools/ufo2otf.py OpenBaskerville.ufo OpenBaskerville.otf"
+  sh "python ./tools/ufo2otf.py OpenBaskerville.ufo"
   puts "Done!"
 end
 
@@ -56,6 +56,7 @@ end
 task :_build_folder => :_version_number do
   @build_folder = 'build/' + @release_slug
   sh "mkdir -p #{@build_folder}"
+  sh "cp -r OpenBaskerville.ufo #{@build_folder}/#{@release_ufo}"
 end
 
 # Check whether we are in the git repository
@@ -88,6 +89,7 @@ task :_version_number => :_has_git do
   end
   @version_number_short = @version_number.split[0]
   @release_slug = @project_slug + '-' + @version_number_short
+  @release_ufo = @release_slug + '.ufo'
   puts "Generated version number #{@version_number}"
 end
 
@@ -99,8 +101,7 @@ end
 task :_bake_version_number => [:_build_folder, :_nokogiri] do
 # This would be cleaner to do with RoboFab, but Rakefiles need Ruby :)
   
-  sh "cp -r OpenBaskerville.ufo #{@build_folder}/"
-  f = File.open("#{@build_folder}/OpenBaskerville.ufo/fontinfo.plist","r")
+  f = File.open("#{@build_folder}/#{@release_ufo}/fontinfo.plist","r")
   doc = Nokogiri::XML(f)
   f.close
   keys = doc.css("dict key")
@@ -116,7 +117,7 @@ task :_bake_version_number => [:_build_folder, :_nokogiri] do
       node.next_element.content += @version_number_short
     end
   end
-  g = File.open("#{@build_folder}/OpenBaskerville.ufo/fontinfo.plist","w")
+  g = File.open("#{@build_folder}/#{@release_ufo}/fontinfo.plist","w")
   g.write(doc)
   g.close
   if success
@@ -135,7 +136,7 @@ end
 desc "Generate an OTF with proper version number in filename and metadata"
 task :release => [:_head_clean, :_bake_version_number, :fontlog, :_bundle_for_release] do
   puts "Generating otf.."
-  sh "python ./tools/ufo2otf.py #{@build_folder}/OpenBaskerville.ufo #{@build_folder}/OpenBaskerville-#{@version_number_short}.otf"
+  sh "python ./tools/ufo2otf.py #{@build_folder}/#{@release_ufo}"
   puts "Built release #{@version_number_short}!"
 end
 

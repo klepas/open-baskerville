@@ -7,7 +7,7 @@
 	<key>capHeight</key>
 	<integer>676</integer>
 	<key>copyright</key>
-	<string>(c) 2008 James Puckett, (c) 2009 Rob Mientjes</string>
+	<string>(c) 2008 James Puckett, (c) 2009 Rob Mientjes, (c) 2006 Raph Levien, (c) 2012 Grzegorz Rolek</string>
 	<key>descender</key>
 	<integer>-204</integer>
 	<key>familyName</key>
@@ -47,7 +47,7 @@ We welcome contributions! You can check out the issue tracker to see what we are
 Thanks!
 </string>
 	<key>openTypeNameDesigner</key>
-	<string>Isaac Moore, James Puckett, Rob Mientjes</string>
+	<string>Isaac Moore, James Puckett, Rob Mientjes, Grzegorgz Rolek, Morris Fuller Benton, Raph Levien</string>
 	<key>openTypeNameDesignerURL</key>
 	<string>http://www.dunwichtype.com/</string>
 	<key>openTypeNameLicense</key>
@@ -58,6 +58,8 @@ ___
 
 Copyright (c) 2008, James Puckett (http://www.dunwichtype.com/),
 Copyright (c) 2009, Rob Mientjes (http://robmientjes.nl/),
+Copyright (c) 2006, Raph Levien (http://www.levien.com/),
+Copyright (c) 2012, Grzegorz Rolek (https://twitter.com/#!/ichosis) 
 with Reserved Font Name Open Baskerville.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.

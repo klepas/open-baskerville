@@ -1,5 +1,6 @@
-# we ignore the build folder:
+# we ignore the build folders:
 build
+webfonts
 
 # the temporary python files:
 *.py[cod]

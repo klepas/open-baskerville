@@ -43,6 +43,15 @@ task :otf do
 # Do you think it is worth the hassle to recreate that for *.ufo?
 end
 
+desc "Generate webfonts"
+# For the instant, due to how ufo2otf is constructed,
+# this will also generate the otf’s
+task :webfonts do
+  puts "Generating otf & webfonts.."
+  sh "python ./tools/ufo2otf.py --webfonts #{args @ufos}"
+  puts "Done!"
+end
+
 desc "Install OpenType Fonts"
 task :install => :_has_otf_files do
   if  RUBY_PLATFORM.include? 'darwin'
@@ -179,7 +188,7 @@ desc "Generate an OTF with proper version number in filename and metadata"
 task :release => [:_head_clean, :_bake_version_number, :fontlog, :_bundle_for_release] do
   release_ufos = Dir.glob("#{@build_folder}/*.ufo")
   puts "Generating otf.."
-  sh "python ./tools/ufo2otf.py #{args release_ufos}"
+  sh "python ./tools/ufo2otf.py #{args release_ufos} --webfonts"
   puts "Built release #{@version_number_short}!"
 end
 

@@ -81,7 +81,7 @@ task :_build_folder => :_version_number do
     release_ufo = ufo.sub('.ufo', '-' + @version_number_short + '.ufo')
     @build_folder = 'build/' + @release_slug
     sh "mkdir -p #{@build_folder}"
-    sh "cp -r OpenBaskerville.ufo #{@build_folder}/#{release_ufo}"
+    sh "cp -r #{ufo} #{@build_folder}/#{release_ufo}"
   end
 end
 

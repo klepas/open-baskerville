@@ -78,7 +78,7 @@ class FontError(Exception):
             build script. This means you will have to install FontForge:
 
             ubuntu, debian:
-            sudo apt-get fontforge python-fontforge
+            sudo apt-get install fontforge python-fontforge
 
             os x:
             brew install fontforge --enable-pyextension

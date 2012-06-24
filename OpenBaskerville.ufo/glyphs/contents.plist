@@ -30,12 +30,18 @@
 	<string>C_.glif</string>
 	<key>CR</key>
 	<string>C_R_.glif</string>
+	<key>Ccedilla</key>
+	<string>C_cedilla.glif</string>
 	<key>D</key>
 	<string>D_.glif</string>
+	<key>Dcedilla</key>
+	<string>D_cedilla.glif</string>
 	<key>E</key>
 	<string>E_.glif</string>
 	<key>Eacute</key>
 	<string>E_acute.glif</string>
+	<key>Ecedilla</key>
+	<string>E_cedilla.glif</string>
 	<key>Ecircumflex</key>
 	<string>E_circumflex.glif</string>
 	<key>Edieresis</key>
@@ -54,6 +60,8 @@
 	<string>G_.glif</string>
 	<key>H</key>
 	<string>H_.glif</string>
+	<key>Hcedilla</key>
+	<string>H_cedilla.glif</string>
 	<key>I</key>
 	<string>I_.glif</string>
 	<key>Iacute</key>
@@ -106,8 +114,12 @@
 	<string>S_.glif</string>
 	<key>Scaron</key>
 	<string>S_caron.glif</string>
+	<key>Scedilla</key>
+	<string>S_cedilla.glif</string>
 	<key>T</key>
 	<string>T_.glif</string>
+	<key>Tcedilla</key>
+	<string>T_cedilla.glif</string>
 	<key>Thorn</key>
 	<string>T_horn.glif</string>
 	<key>U</key>
@@ -190,6 +202,10 @@
 	<string>c_t.glif</string>
 	<key>caron</key>
 	<string>caron.glif</string>
+	<key>ccedilla</key>
+	<string>ccedilla.glif</string>
+	<key>cedilla</key>
+	<string>cedilla.glif</string>
 	<key>cent</key>
 	<string>cent.glif</string>
 	<key>circumflex</key>
@@ -204,6 +220,8 @@
 	<string>currency.glif</string>
 	<key>d</key>
 	<string>d.glif</string>
+	<key>dcedilla</key>
+	<string>dcedilla.glif</string>
 	<key>degree</key>
 	<string>degree.glif</string>
 	<key>dieresis</key>
@@ -228,6 +246,8 @@
 	<string>e.glif</string>
 	<key>eacute</key>
 	<string>eacute.glif</string>
+	<key>ecedilla</key>
+	<string>ecedilla.glif</string>
 	<key>ecircumflex</key>
 	<string>ecircumflex.glif</string>
 	<key>edieresis</key>
@@ -282,6 +302,8 @@
 	<string>greater.glif</string>
 	<key>h</key>
 	<string>h.glif</string>
+	<key>hcedilla</key>
+	<string>hcedilla.glif</string>
 	<key>hyphen</key>
 	<string>hyphen.glif</string>
 	<key>i</key>
@@ -400,6 +422,8 @@
 	<string>s_t.glif</string>
 	<key>scaron</key>
 	<string>scaron.glif</string>
+	<key>scedilla</key>
+	<string>scedilla.glif</string>
 	<key>section</key>
 	<string>section.glif</string>
 	<key>semicolon</key>
@@ -416,6 +440,8 @@
 	<string>sterling.glif</string>
 	<key>t</key>
 	<string>t.glif</string>
+	<key>tcedilla</key>
+	<string>tcedilla.glif</string>
 	<key>thorn</key>
 	<string>thorn.glif</string>
 	<key>three</key>

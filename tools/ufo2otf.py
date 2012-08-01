@@ -7,10 +7,9 @@
 
 """Calls the compiler.
 """
-from ufo2otf import Compiler
+from ufo2otf import argparse, Compiler
 
 def console():
-    import argparse
     from sys import exit
 
     parser = argparse.ArgumentParser()

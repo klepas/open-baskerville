@@ -141,16 +141,36 @@ end
 # version)
 task :_version_number => [:_has_git, :_get_slug] do
   git_describe = `git describe`.strip
-  # v0.0.0-49-gb5cc6c0 -> 0.0.49 (gb5cc6c0)
-  # http://www.rubular.com/r/kqgRzxS8G9
-  @version_number = git_describe.gsub /[v]?([0-9]+)\.([0-9]+)\.0-([0-9]+)-([\w]+)/  , '\1.\2.\3 (\4)'
-  if @version_number == git_describe
-    abort "Unable to automatically generate patch version number"
+  if $?.to_i != 0
+    abort "Couldn’t find any version number tags! This script uses the built in tag functionality of the Git versioning system as the basis for generating version numbers. Consider adding version numbers with 'rake _version_number:init'"
   end
-  @version_number_short = @version_number.split[0]
+  if git_describe =~ /[v]?([0-9]+)\.([0-9]+)\.0-([0-9]+)-([\w]+)/
+    @major_version = $1
+    @minor_version = $2
+    @version_number = "#{$1}.#{$2}.#{$3} (#{$4})"
+    @version_number_short = "#{$1}.#{$2}.#{$3}"
+  elsif git_describe =~ /[v]?([0-9]+)\.([0-9]+)/
+    @major_version = $1
+    @minor_version = $2
+    @version_number = @version_number_short = "#{$1}.#{$2}"
+  else
+    abort "Couldn’t parse version number from git tags. Consider (re-)initialising the version number with 'rake _version_number:init'"
+  end
   @release_slug = @project_slug + '-' + @version_number_short
   puts "Generated version number #{@version_number}"
+  puts "Release slug: #{@release_slug}"
 end
+
+namespace :_version_number do
+  task :init do
+    puts "Major version number? (leave empty for 0, default)"
+    major = $stdin.gets.to_i
+    # btw, this relies on "\n".to_i returning 0
+    puts "Minor version number? (leave empty for 0, default)"
+    minor = $stdin.gets.to_i
+    sh "git tag -a #{major}.#{minor} -m 'Started versioning'"
+  end
+end 
 
 task :_nokogiri do
   require 'nokogiri'

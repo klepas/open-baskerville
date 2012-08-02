@@ -4,17 +4,15 @@
   <unicode hex="2014"/>
   <outline>
     <contour>
-      <point x="0.0" y="236.0" type="line"/>
-      <point x="0.0" y="194.0" type="line"/>
-      <point x="900.0" y="194.0" type="line"/>
-      <point x="900.0" y="236.0" type="line"/>
+      <point x="0" y="236" type="line"/>
+      <point x="0" y="194" type="line"/>
+      <point x="900" y="194" type="line"/>
+      <point x="900" y="236" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.layerData</key>
-      <dict>
-      </dict>
+    <key>com.typemytype.robofont.layerData</key>
     </dict>
   </lib>
 </glyph>

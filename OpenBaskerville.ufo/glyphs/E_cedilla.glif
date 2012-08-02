@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Ecedilla" format="1">
   <advance width="660"/>
   <unicode hex="0228"/>
   <outline>
     <contour>
-      <point x="152" y="133" type="line"/>
+      <point x="152" y="133" type="line" smooth="yes"/>
       <point x="152" y="51"/>
       <point x="103" y="13"/>
       <point x="46" y="13" type="curve" smooth="yes"/>

@@ -2,7 +2,7 @@
 <glyph name="dotlessiacute" format="1">
   <advance width="254"/>
   <outline>
-    <component base="dotlessi"/>
     <component base="acute" xOffset="-16"/>
+    <component base="dotlessi"/>
   </outline>
 </glyph>

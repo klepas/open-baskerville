@@ -89,18 +89,14 @@
     </contour>
     <contour>
       <point x="35" y="95" type="line"/>
-      <point x="35" y="95"/>
-      <point x="43" y="88"/>
-      <point x="43" y="88" type="curve"/>
+      <point x="43" y="88" type="line"/>
       <point x="529" y="611" type="line"/>
       <point x="520" y="618" type="line"/>
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.layerData</key>
-      <dict>
-      </dict>
+    <key>com.typemytype.robofont.layerData</key>
     </dict>
   </lib>
 </glyph>

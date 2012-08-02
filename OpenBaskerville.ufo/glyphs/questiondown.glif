@@ -3,6 +3,7 @@
   <advance width="461"/>
   <unicode hex="00BF"/>
   <outline>
+    <component base="period" xOffset="231" yOffset="511"/>
     <contour>
       <point x="326" y="281" type="line"/>
       <point x="301" y="306"/>
@@ -39,6 +40,5 @@
       <point x="357" y="450" type="line"/>
       <point x="326" y="450" type="line"/>
     </contour>
-    <component base="period" xOffset="231" yOffset="511"/>
   </outline>
 </glyph>

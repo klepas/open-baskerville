@@ -1,0 +1,107 @@
+
+# GPOS 
+
+
+lookup kernHorizontalKerninglookup0 {
+  lookupflag 0;
+    pos \seven \ordfeminine 30;
+} kernHorizontalKerninglookup0;
+
+lookup kernHorizontalKerninginLatinloo {
+  lookupflag 0;
+    pos \F \at -52;
+    pos \T \at -46;
+    pos \V \e -111;
+    pos \V \A -179;
+    pos \W \at -29;
+    pos \a \y -3;
+    pos \a \w -7;
+    pos \a \s 15;
+    pos \at \W -42;
+    pos \at \V -42;
+    pos \at \T -32;
+    pos \b \period -15;
+    pos \b \ordfeminine -14;
+    pos \d \y -4;
+    pos \d \w -23;
+    pos \e \period -10;
+    pos \f \s 20;
+    pos \f \ordfeminine 100;
+    pos \g \z 5;
+    pos \g \p 10;
+    pos \g \ordfeminine 34;
+    pos \g \g 10;
+    pos \g \b 10;
+    pos \h \y -35;
+    pos \h \u -5;
+    pos \h \ordfeminine -40;
+    pos \i \t -5;
+    pos \i \quoteright -10;
+    pos \i \j -24;
+    pos \j \s 15;
+    pos \j \j 24;
+    pos \k \z 35;
+    pos \k \a 5;
+    pos \l \u -5;
+    pos \m \u -5;
+    pos \n \y -35;
+    pos \n \u -4;
+    pos \o \period -15;
+    pos \p \t -8;
+    pos \quoteright \d -40;
+    pos \r \ordfeminine 50;
+    pos \s \w -10;
+    pos \s \v -7;
+    pos \s \u -3;
+    pos \s \t -15;
+    pos \t \z 17;
+    pos \t \o -8;
+    pos \t \d 5;
+    pos \y \l -20;
+    pos \y \k -5;
+    pos \y \h -20;
+    pos \y \b -43;
+} kernHorizontalKerninginLatinloo;
+
+feature kern {
+
+  script DFLT;
+     language dflt ;
+      lookup kernHorizontalKerninglookup0;
+
+  script latn;
+     language dflt ;
+      lookup kernHorizontalKerninginLatinloo;
+} kern;
+
+@GDEF_Simple = [\.null \A \AE \Aacute \Acircumflex \Adieresis \Agrave \Aogonek 
+	\Aring \Atilde \B \C \CR \Ccedilla \D \Dcedilla \E \Eacute \Ecedilla \Ecircumflex 
+	\Edieresis \Egrave \Eogonek \Eth \Euro \F \G \H \Hcedilla \I \Iacute \Icircumflex 
+	\Idieresis \Igrave \Iogonek \J \K \L \M \N \Ntilde \O \OE \Oacute \Ocircumflex 
+	\Odieresis \Ograve \Oogonek \Oslash \Otilde \P \Q \R \S \Scaron \Scedilla \T 
+	\Tcedilla \Thorn \U \Uacute \Ucircumflex \Udieresis \Ugrave \Uogonek \V \W \X \Y 
+	\Yacute \Ydieresis \Z \Zcaron \a \aacute \acircumflex \acute \adieresis \ae 
+	\agrave \ampersand \aogonek \aring \asciicircum \asciitilde \asterisk \at 
+	\atilde \b \bar \braceleft \braceright \bracketleft \bracketright \brokenbar 
+	\bullet \c \c_t \caron \ccedilla \cedilla \cent \circumflex \colon \comma 
+	\copyright \currency \d \dcedilla \degree \dieresis \divide \dollar \dotaccent 
+	\dotlessi \dotlessiacute \dotlessicircumflex \dotlessidieresis 
+	\dotlessigrave \e \eacute \ecedilla \ecircumflex \edieresis \egrave \eight 
+	\emdash \endash \eogonek \equal \eth \exclam \exclamdown \f \f_f_j \f_j \ff \ffi 
+	\ffl \fi \five \fl \four \g \g_i \germandbls \grave \greater \h \hcedilla \hyphen \i 
+	\iacute \icircumflex \idieresis \igrave \ij \interrobang \iogonek \j \k \l \less 
+	\logicalnot \longs \longs_t \m \multiply \n \nine \ntilde \numbersign \o \oacute 
+	\ocircumflex \odieresis \oe \ogonek \ograve \one \oogonek \ordfeminine 
+	\ordmasculine \oslash \otilde \p \paragraph \parenleft \parenright \percent 
+	\period \periodcentered \perthousand \plus \q \question \questiondown \quotedbl 
+	\quotedblleft \quotedblright \quoteleft \quoteright \quotesingle \r 
+	\registered \ring \s \s_t \scaron \scedilla \section \semicolon \seven \six \slash 
+	\space \sterling \t \tcedilla \thorn \three \tilde \two \u \uacute \ucircumflex 
+	\udieresis \ugrave \underscore \uogonek \v \w \x \y \yacute \ydieresis \z \zcaron 
+	\zero ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , , ;
+
+} GDEF;
+

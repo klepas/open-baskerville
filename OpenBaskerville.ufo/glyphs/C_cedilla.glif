@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Ccedilla" format="1">
   <advance width="668"/>
   <unicode hex="00C7"/>
   <outline>
     <contour>
-      <point x="639" y="465"/>
-      <point x="634" y="675"/>
-      <point x="634" y="675" type="curve"/>
+      <point x="634" y="675" type="line"/>
       <point x="623" y="675" type="line"/>
       <point x="621" y="665"/>
       <point x="610" y="648"/>

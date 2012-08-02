@@ -1,190 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
+    <dict>
 	<key>F</key>
 	<dict>
-		<key>at</key>
-		<integer>-52</integer>
+	    <key>at</key>
+	    <integer>-52</integer>
 	</dict>
 	<key>T</key>
 	<dict>
-		<key>at</key>
-		<integer>-46</integer>
+	    <key>at</key>
+	    <integer>-46</integer>
 	</dict>
 	<key>V</key>
 	<dict>
-		<key>A</key>
-		<integer>-179</integer>
-		<key>e</key>
-		<integer>-111</integer>
+	    <key>e</key>
+	    <integer>-111</integer>
+	    <key>A</key>
+	    <integer>-179</integer>
 	</dict>
 	<key>W</key>
 	<dict>
-		<key>at</key>
-		<integer>-29</integer>
+	    <key>at</key>
+	    <integer>-29</integer>
 	</dict>
 	<key>a</key>
 	<dict>
-		<key>s</key>
-		<integer>15</integer>
-		<key>w</key>
-		<integer>-7</integer>
-		<key>y</key>
-		<integer>-3</integer>
+	    <key>y</key>
+	    <integer>-3</integer>
+	    <key>w</key>
+	    <integer>-7</integer>
+	    <key>s</key>
+	    <integer>15</integer>
 	</dict>
 	<key>at</key>
 	<dict>
-		<key>T</key>
-		<integer>-32</integer>
-		<key>V</key>
-		<integer>-42</integer>
-		<key>W</key>
-		<integer>-42</integer>
+	    <key>W</key>
+	    <integer>-42</integer>
+	    <key>V</key>
+	    <integer>-42</integer>
+	    <key>T</key>
+	    <integer>-32</integer>
 	</dict>
 	<key>b</key>
 	<dict>
-		<key>ordfeminine</key>
-		<integer>-14</integer>
-		<key>period</key>
-		<integer>-15</integer>
+	    <key>period</key>
+	    <integer>-15</integer>
+	    <key>ordfeminine</key>
+	    <integer>-14</integer>
 	</dict>
 	<key>d</key>
 	<dict>
-		<key>w</key>
-		<integer>-23</integer>
-		<key>y</key>
-		<integer>-4</integer>
+	    <key>y</key>
+	    <integer>-4</integer>
+	    <key>w</key>
+	    <integer>-23</integer>
 	</dict>
 	<key>e</key>
 	<dict>
-		<key>period</key>
-		<integer>-10</integer>
+	    <key>period</key>
+	    <integer>-10</integer>
 	</dict>
 	<key>f</key>
 	<dict>
-		<key>ordfeminine</key>
-		<integer>100</integer>
-		<key>s</key>
-		<integer>20</integer>
+	    <key>s</key>
+	    <integer>20</integer>
+	    <key>ordfeminine</key>
+	    <integer>100</integer>
 	</dict>
 	<key>g</key>
 	<dict>
-		<key>b</key>
-		<integer>10</integer>
-		<key>g</key>
-		<integer>10</integer>
-		<key>ordfeminine</key>
-		<integer>34</integer>
-		<key>p</key>
-		<integer>10</integer>
-		<key>z</key>
-		<integer>5</integer>
+	    <key>z</key>
+	    <integer>5</integer>
+	    <key>p</key>
+	    <integer>10</integer>
+	    <key>ordfeminine</key>
+	    <integer>34</integer>
+	    <key>g</key>
+	    <integer>10</integer>
+	    <key>b</key>
+	    <integer>10</integer>
 	</dict>
 	<key>h</key>
 	<dict>
-		<key>ordfeminine</key>
-		<integer>-40</integer>
-		<key>u</key>
-		<integer>-5</integer>
-		<key>y</key>
-		<integer>-35</integer>
+	    <key>y</key>
+	    <integer>-35</integer>
+	    <key>u</key>
+	    <integer>-5</integer>
+	    <key>ordfeminine</key>
+	    <integer>-40</integer>
 	</dict>
 	<key>i</key>
 	<dict>
-		<key>j</key>
-		<integer>-24</integer>
-		<key>quoteright</key>
-		<integer>-10</integer>
-		<key>t</key>
-		<integer>-5</integer>
+	    <key>t</key>
+	    <integer>-5</integer>
+	    <key>quoteright</key>
+	    <integer>-10</integer>
+	    <key>j</key>
+	    <integer>-24</integer>
 	</dict>
 	<key>j</key>
 	<dict>
-		<key>j</key>
-		<integer>24</integer>
-		<key>s</key>
-		<integer>15</integer>
+	    <key>s</key>
+	    <integer>15</integer>
+	    <key>j</key>
+	    <integer>24</integer>
 	</dict>
 	<key>k</key>
 	<dict>
-		<key>a</key>
-		<integer>5</integer>
-		<key>z</key>
-		<integer>35</integer>
+	    <key>z</key>
+	    <integer>35</integer>
+	    <key>a</key>
+	    <integer>5</integer>
 	</dict>
 	<key>l</key>
 	<dict>
-		<key>u</key>
-		<integer>-5</integer>
+	    <key>u</key>
+	    <integer>-5</integer>
 	</dict>
 	<key>m</key>
 	<dict>
-		<key>u</key>
-		<integer>-5</integer>
+	    <key>u</key>
+	    <integer>-5</integer>
 	</dict>
 	<key>n</key>
 	<dict>
-		<key>u</key>
-		<integer>-4</integer>
-		<key>y</key>
-		<integer>-35</integer>
+	    <key>y</key>
+	    <integer>-35</integer>
+	    <key>u</key>
+	    <integer>-4</integer>
 	</dict>
 	<key>o</key>
 	<dict>
-		<key>period</key>
-		<integer>-15</integer>
+	    <key>period</key>
+	    <integer>-15</integer>
 	</dict>
 	<key>p</key>
 	<dict>
-		<key>t</key>
-		<integer>-8</integer>
+	    <key>t</key>
+	    <integer>-8</integer>
 	</dict>
 	<key>quoteright</key>
 	<dict>
-		<key>d</key>
-		<integer>-40</integer>
+	    <key>d</key>
+	    <integer>-40</integer>
 	</dict>
 	<key>r</key>
 	<dict>
-		<key>ordfeminine</key>
-		<integer>50</integer>
+	    <key>ordfeminine</key>
+	    <integer>50</integer>
 	</dict>
 	<key>s</key>
 	<dict>
-		<key>t</key>
-		<integer>-15</integer>
-		<key>u</key>
-		<integer>-3</integer>
-		<key>v</key>
-		<integer>-7</integer>
-		<key>w</key>
-		<integer>-10</integer>
+	    <key>w</key>
+	    <integer>-10</integer>
+	    <key>v</key>
+	    <integer>-7</integer>
+	    <key>u</key>
+	    <integer>-3</integer>
+	    <key>t</key>
+	    <integer>-15</integer>
 	</dict>
 	<key>seven</key>
 	<dict>
-		<key>ordfeminine</key>
-		<integer>30</integer>
+	    <key>ordfeminine</key>
+	    <integer>30</integer>
 	</dict>
 	<key>t</key>
 	<dict>
-		<key>d</key>
-		<integer>5</integer>
-		<key>o</key>
-		<integer>-8</integer>
-		<key>z</key>
-		<integer>17</integer>
+	    <key>z</key>
+	    <integer>17</integer>
+	    <key>o</key>
+	    <integer>-8</integer>
+	    <key>d</key>
+	    <integer>5</integer>
 	</dict>
 	<key>y</key>
 	<dict>
-		<key>b</key>
-		<integer>-43</integer>
-		<key>h</key>
-		<integer>-20</integer>
-		<key>k</key>
-		<integer>-5</integer>
-		<key>l</key>
-		<integer>-20</integer>
+	    <key>l</key>
+	    <integer>-20</integer>
+	    <key>k</key>
+	    <integer>-5</integer>
+	    <key>h</key>
+	    <integer>-20</integer>
+	    <key>b</key>
+	    <integer>-43</integer>
 	</dict>
-</dict>
+    </dict>
 </plist>

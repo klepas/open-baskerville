@@ -12,12 +12,8 @@
       <point x="57" y="172"/>
       <point x="56" y="198" type="curve"/>
       <point x="45" y="198" type="line"/>
-      <point x="45" y="198"/>
-      <point x="51" y="-10"/>
-      <point x="51" y="-10" type="curve"/>
-      <point x="51" y="-10"/>
-      <point x="63" y="-10"/>
-      <point x="63" y="-10" type="curve"/>
+      <point x="51" y="-10" type="line"/>
+      <point x="63" y="-10" type="line"/>
       <point x="63" y="-6"/>
       <point x="64" y="21"/>
       <point x="93" y="21" type="curve" smooth="yes"/>
@@ -37,12 +33,8 @@
       <point x="424" y="526"/>
       <point x="424" y="489" type="curve"/>
       <point x="435" y="489" type="line"/>
-      <point x="435" y="489"/>
-      <point x="429" y="678"/>
-      <point x="429" y="678" type="curve"/>
-      <point x="429" y="678"/>
-      <point x="419" y="678"/>
-      <point x="419" y="678" type="curve"/>
+      <point x="429" y="678" type="line"/>
+      <point x="419" y="678" type="line"/>
       <point x="419" y="665"/>
       <point x="413" y="645"/>
       <point x="385" y="645" type="curve" smooth="yes"/>
@@ -56,14 +48,12 @@
       <point x="381" y="353"/>
     </contour>
     <contour>
-      <point x="263" y="229" type="move" name="top"/>
+      <point x="263" y="229" type="move" smooth="yes"/>
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>com.typemytype.robofont.layerData</key>
-      <dict>
-      </dict>
+    <key>com.typemytype.robofont.layerData</key>
     </dict>
   </lib>
 </glyph>

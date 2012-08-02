@@ -19,18 +19,21 @@ def args(items)
 end
 
 @ufos = Dir.glob('*.ufo')
+# Todo: like this we find only the UFO’s that are in the root-folder.
+# It’s better to recursively find all UFO’s in subfolders as well.
+# When implementing this we should make sure all the other tasks
+# are robust enough to handle various kinds of paths.
 
 # Normally, the Rakefile should automatically figure out a common fileslug
 # to use for your zipfiles etcetera, based on the common prefix of your UFO’s.
 # (see rake task: :_get_slug)
 # Alternatively, manually specify here:
-
 @project_slug = ""
 
 task :default => :otf
 
 desc "Generate OpenType Fonts"
-task :otf do
+task :otf => :_has_ufos do
   puts "Generating otf.."
   sh "python ./tools/ufo2otf.py #{args @ufos}"
   puts "Done!"
@@ -46,7 +49,7 @@ end
 desc "Generate webfonts"
 # For the instant, due to how ufo2otf is constructed,
 # this will also generate the otf’s
-task :webfonts do
+task :webfonts => :_has_ufos do
   puts "Generating otf & webfonts.."
   sh "python ./tools/ufo2otf.py --webfonts #{args @ufos}"
   puts "Done!"
@@ -76,6 +79,13 @@ task :fontlog => :_build_folder do
   puts "FONTLOG.txt generated"
 end
 
+# Check if there are ufo files
+task :_has_ufos do
+  if @ufos.empty?
+    abort "No UFO’s were found in the project root folder! This Rakefile is designed to work with UFO font files."
+  end
+end
+
 # Check if there are otf files
 task :_has_otf_files do
   if Dir["*.otf"].length == 0
@@ -95,7 +105,7 @@ task :_build_folder => :_version_number do
 end
 
 # Determine the project file slug
-task :_get_slug do
+task :_get_slug => :_has_ufos do
   # This will take the prefix all your UFO’s have in common as the project slug
   # (Which is the name for the zip archive etc.)
   # Unless another slug is already specified in the top of the Rakefile

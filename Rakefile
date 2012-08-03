@@ -182,6 +182,23 @@ namespace :_version_number do
   end
 end 
 
+desc "Bump the major version number (i.e. 0.6 -> 1.0)"
+task :major_bump =>  :_version_number do
+    @major_version = @major_version.to_i + 1
+    @minor_version = 0
+    @version_number_short = "#{@major_version}.#{@minor_version}"
+    puts "Bump version to #{@version_number_short}"
+    sh "git tag -a #{@version_number_short} -m 'Programmatically bumped major version number to #{@version_number_short}'"
+end
+
+desc "Bump the minor version number (i.e. 0.6 -> 1.0)"
+task :minor_bump =>  :_version_number do
+    @minor_version = @minor_version.to_i + 1
+    @version_number_short = "#{@major_version}.#{@minor_version}"
+    puts "Bump version to #{@version_number_short}"
+    sh "git tag -a #{@version_number_short} -m 'Programmatically bumped minor version number to #{@version_number_short}'"
+end
+
 task :_nokogiri do
   require 'nokogiri'
 end

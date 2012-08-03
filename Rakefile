@@ -79,6 +79,16 @@ task :fontlog => :_build_folder do
   puts "FONTLOG.txt generated"
 end
 
+desc "Start keeping track of version numbers"
+task :init do
+  git_describe = `git describe`.strip
+  if $?.to_i == 0 and git_describe =~ /[v]?([0-9]+)\.([0-9]+)/
+    abort "A valid version number tag has already been found."
+  end
+  puts "No suitable version tags found. We will add the first one. You can enter the version number from which to start font development:"
+  Rake::Task["_version_number:init"].invoke
+end
+
 # Check if there are ufo files
 task :_has_ufos do
   if @ufos.empty?
@@ -142,7 +152,7 @@ end
 task :_version_number => [:_has_git, :_get_slug] do
   git_describe = `git describe`.strip
   if $?.to_i != 0
-    abort "Couldn’t find any version number tags! This script uses the built in tag functionality of the Git versioning system as the basis for generating version numbers. Consider adding version numbers with 'rake _version_number:init'"
+    abort "Couldn’t find any version number tags! This script uses the built in tag functionality of the Git versioning system as the basis for generating version numbers. Consider adding version numbers with 'rake init'"
   end
   if git_describe =~ /[v]?([0-9]+)\.([0-9]+)\.0-([0-9]+)-([\w]+)/
     @major_version = $1
@@ -154,7 +164,7 @@ task :_version_number => [:_has_git, :_get_slug] do
     @minor_version = $2
     @version_number = @version_number_short = "#{$1}.#{$2}"
   else
-    abort "Couldn’t parse version number from git tags. Consider (re-)initialising the version number with 'rake _version_number:init'"
+    abort "Couldn’t parse version number from git tags. Consider (re-)initialising the version number with 'rake init'"
   end
   @release_slug = @project_slug + '-' + @version_number_short
   puts "Generated version number #{@version_number}"
@@ -168,7 +178,7 @@ namespace :_version_number do
     # btw, this relies on "\n".to_i returning 0
     puts "Minor version number? (leave empty for 0, default)"
     minor = $stdin.gets.to_i
-    sh "git tag -a #{major}.#{minor} -m 'Started versioning'"
+    sh "git tag -a #{major}.#{minor} -m 'Start keeping track of version numbers programmatically'"
   end
 end 
 

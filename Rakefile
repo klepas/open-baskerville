@@ -179,7 +179,7 @@ namespace :_version_number do
     # btw, this relies on "\n".to_i returning 0
     puts "Minor version number? (leave empty for 0, default)"
     minor = $stdin.gets.to_i
-    sh "git tag -a #{major}.#{minor} -m 'Start keeping track of version numbers programmatically'"
+    sh "git tag -a #{major}.#{minor} -m ’start keeping track of version numbers programmatically'"
   end
 end 
 

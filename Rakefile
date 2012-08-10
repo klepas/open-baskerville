@@ -1,8 +1,9 @@
+# encoding: utf-8
 # Rakefile for Font Development
 # Eric Schrijver
 # Requires Git > 1.7.0 and FontForge-Python
 #
-# This won't work on Windows: it uses quite a lot of unix utilities.
+# This won’t work on Windows: it uses quite a lot of unix utilities.
 
 def shortest_prefix(items)
   # Shortest prefix shared by an array of strings
@@ -19,13 +20,13 @@ def args(items)
 end
 
 @ufos = Dir.glob('*.ufo')
-# Todo: like this we find only the UFO's that are in the root-folder.
-# It's better to recursively find all UFO's in subfolders as well.
+# Todo: like this we find only the UFO’s that are in the root-folder.
+# It’s better to recursively find all UFO’s in subfolders as well.
 # When implementing this we should make sure all the other tasks
 # are robust enough to handle various kinds of paths.
 
 # Normally, the Rakefile should automatically figure out a common fileslug
-# to use for your zipfiles etcetera, based on the common prefix of your UFO's.
+# to use for your zipfiles etcetera, based on the common prefix of your UFO’s.
 # (see rake task: :_get_slug)
 # Alternatively, manually specify here:
 @project_slug = ""
@@ -48,7 +49,7 @@ end
 
 desc "Generate webfonts"
 # For the instant, due to how ufo2otf is constructed,
-# this will also generate the otf's
+# this will also generate the otf’s
 task :webfonts => :_has_ufos do
   puts "Generating otf & webfonts.."
   sh "python ./tools/ufo2otf.py --webfonts #{args @ufos}"
@@ -92,7 +93,7 @@ end
 # Check if there are ufo files
 task :_has_ufos do
   if @ufos.empty?
-    abort "No UFO's were found in the project root folder! This Rakefile is designed to work with UFO font files."
+    abort "No UFO’s were found in the project root folder! This Rakefile is designed to work with UFO font files."
   end
 end
 
@@ -116,7 +117,7 @@ end
 
 # Determine the project file slug
 task :_get_slug => :_has_ufos do
-  # This will take the prefix all your UFO's have in common as the project slug
+  # This will take the prefix all your UFO’s have in common as the project slug
   # (Which is the name for the zip archive etc.)
   # Unless another slug is already specified in the top of the Rakefile
   if @project_slug == ""
@@ -152,7 +153,7 @@ end
 task :_version_number => [:_has_git, :_get_slug] do
   git_describe = `git describe`.strip
   if $?.to_i != 0
-    abort "Couldn't find any version number tags! This script uses the built in tag functionality of the Git versioning system as the basis for generating version numbers. Consider adding version numbers with 'rake init'"
+    abort "Couldn’t find any version number tags! This script uses the built in tag functionality of the Git versioning system as the basis for generating version numbers. Consider adding version numbers with 'rake init'"
   end
   if git_describe =~ /[v]?([0-9]+)\.([0-9]+)\.0-([0-9]+)-([\w]+)/
     @major_version = $1
@@ -164,7 +165,7 @@ task :_version_number => [:_has_git, :_get_slug] do
     @minor_version = $2
     @version_number = @version_number_short = "#{$1}.#{$2}"
   else
-    abort "Couldn't parse version number from git tags. Consider (re-)initialising the version number with 'rake init'"
+    abort "Couldn’t parse version number from git tags. Consider (re-)initialising the version number with 'rake init'"
   end
   @release_slug = @project_slug + '-' + @version_number_short
   puts "Generated version number #{@version_number}"
@@ -178,7 +179,7 @@ namespace :_version_number do
     # btw, this relies on "\n".to_i returning 0
     puts "Minor version number? (leave empty for 0, default)"
     minor = $stdin.gets.to_i
-    sh "git tag -a #{major}.#{minor} -m 'Start keeping track of version numbers programmatically'"
+    sh "git tag -a #{major}.#{minor} -m ’start keeping track of version numbers programmatically'"
   end
 end 
 
@@ -203,7 +204,7 @@ task :_nokogiri do
   require 'nokogiri'
 end
 
-# Bake this version number into the UFO (and therefore, into generated OTF's)
+# Bake this version number into the UFO (and therefore, into generated OTF’s)
 task :_bake_version_number => [:_build_folder, :_nokogiri] do
 # This would be cleaner to do with RoboFab, but Rakefiles need Ruby :)
   release_ufos = Dir.glob("#{@build_folder}/*.ufo")

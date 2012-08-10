@@ -1,3 +1,4 @@
+# encoding: utf-8
 # Rakefile for Font Development
 # Eric Schrijver
 # Requires Git > 1.7.0 and FontForge-Python

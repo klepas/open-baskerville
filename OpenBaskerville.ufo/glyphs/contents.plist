@@ -30,16 +30,18 @@
 	<string>C_.glif</string>
 	<key>CR</key>
 	<string>C_R_.glif</string>
+	<key>Ccedilla</key>
+	<string>C_cedilla.glif</string>
 	<key>D</key>
 	<string>D_.glif</string>
 	<key>Dcedilla</key>
-	<string>Dcedilla_.glif</string>
+	<string>D_cedilla.glif</string>
 	<key>E</key>
 	<string>E_.glif</string>
 	<key>Eacute</key>
 	<string>E_acute.glif</string>
 	<key>Ecedilla</key>
-	<string>Ecedilla_.glif</string>
+	<string>E_cedilla.glif</string>
 	<key>Ecircumflex</key>
 	<string>E_circumflex.glif</string>
 	<key>Edieresis</key>
@@ -59,7 +61,7 @@
 	<key>H</key>
 	<string>H_.glif</string>
 	<key>Hcedilla</key>
-	<string>Hcedilla_.glif</string>
+	<string>H_cedilla.glif</string>
 	<key>I</key>
 	<string>I_.glif</string>
 	<key>Iacute</key>
@@ -112,10 +114,12 @@
 	<string>S_.glif</string>
 	<key>Scaron</key>
 	<string>S_caron.glif</string>
+	<key>Scedilla</key>
+	<string>S_cedilla.glif</string>
 	<key>T</key>
 	<string>T_.glif</string>
 	<key>Tcedilla</key>
-	<string>Tcedilla_.glif</string>
+	<string>T_cedilla.glif</string>
 	<key>Thorn</key>
 	<string>T_horn.glif</string>
 	<key>U</key>
@@ -198,6 +202,8 @@
 	<string>c_t.glif</string>
 	<key>caron</key>
 	<string>caron.glif</string>
+	<key>ccedilla</key>
+	<string>ccedilla.glif</string>
 	<key>cedilla</key>
 	<string>cedilla.glif</string>
 	<key>cent</key>
@@ -340,6 +346,8 @@
 	<string>nine.glif</string>
 	<key>ntilde</key>
 	<string>ntilde.glif</string>
+	<key>numbersign</key>
+	<string>numbersign.glif</string>
 	<key>o</key>
 	<string>o.glif</string>
 	<key>oacute</key>
@@ -360,6 +368,8 @@
 	<string>oogonek.glif</string>
 	<key>ordfeminine</key>
 	<string>ordfeminine.glif</string>
+	<key>ordmasculine</key>
+	<string>ordmasculine.glif</string>
 	<key>oslash</key>
 	<string>oslash.glif</string>
 	<key>otilde</key>
@@ -412,6 +422,8 @@
 	<string>s_t.glif</string>
 	<key>scaron</key>
 	<string>scaron.glif</string>
+	<key>scedilla</key>
+	<string>scedilla.glif</string>
 	<key>section</key>
 	<string>section.glif</string>
 	<key>semicolon</key>
@@ -420,6 +432,8 @@
 	<string>seven.glif</string>
 	<key>six</key>
 	<string>six.glif</string>
+	<key>slash</key>
+	<string>slash.glif</string>
 	<key>space</key>
 	<string>space.glif</string>
 	<key>sterling</key>

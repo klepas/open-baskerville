@@ -67,10 +67,10 @@ class FontError(Exception):
             
             $ sudo apt-get install python-fontforge
             
-            Or you might have to reinstall fontforge with the
-            --enable-pyextension flag:
+            On OS X, only recent versions of the homebrew formula come with
+            the python extension. You might have to reinstall:
             
-            brew install fontforge --enable-pyextension
+            brew install fontforge
             """ % self.diagnostics['ff']
         else:
             return """\
@@ -78,10 +78,10 @@ class FontError(Exception):
             build script. This means you will have to install FontForge:
 
             ubuntu, debian:
-            sudo apt-get fontforge python-fontforge
+            sudo apt-get install fontforge python-fontforge
 
             os x:
-            brew install fontforge --enable-pyextension
+            brew install fontforge
 
             More info see:
             openfontlibrary.org/wiki/How_to_install_FontForge"""

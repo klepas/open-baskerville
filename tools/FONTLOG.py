@@ -26,9 +26,9 @@ except IOError:
     README = open('../README.txt')
 
 try:
-    AUTHORS = open('AUTHORS.txt')
+    AUTHORS = open('COPYING-OFL.txt')
 except IOError:
-    AUTHORS = open('../AUTHORS.txt')
+    AUTHORS = open('../COPYING-OFL.txt')
 
 LOG = Popen(['git','log','--reverse'], stdout=PIPE)
 
@@ -47,9 +47,8 @@ print "____"
 print ""
 print "Designers:"
 print ""
-print AUTHORS.read()
+print AUTHORS.read().split("with Reserved Font Name")[0] # Above there, it lists the designers
 
-print ""
 print "____"
 print ""
 print "Changelog:"

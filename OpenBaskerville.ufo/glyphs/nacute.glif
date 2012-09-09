@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="atilde" format="1">
-  <advance width="447"/>
-  <unicode hex="00E3"/>
+<glyph name="nacute" format="1">
+  <advance width="555"/>
+  <unicode hex="0144"/>
   <outline>
-    <component base="a"/>
-    <component base="tilde" xOffset="56"/>
+    <component base="n"/>
+    <component base="acute" xOffset="120"/>
   </outline>
   <lib>
     <dict>

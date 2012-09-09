@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="atilde" format="1">
-  <advance width="447"/>
-  <unicode hex="00E3"/>
+<glyph name="wcircumflex" format="1">
+  <advance width="658"/>
+  <unicode hex="0175"/>
   <outline>
-    <component base="a"/>
-    <component base="tilde" xOffset="56"/>
+    <component base="w"/>
+    <component base="circumflex" xOffset="160"/>
   </outline>
   <lib>
     <dict>

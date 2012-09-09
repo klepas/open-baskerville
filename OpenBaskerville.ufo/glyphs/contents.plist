@@ -10,14 +10,20 @@
 	<string>A_.glif</string>
 	<key>AE</key>
 	<string>A_E_.glif</string>
+	<key>AEacute</key>
+	<string>AEacute_.glif</string>
 	<key>Aacute</key>
 	<string>A_acute.glif</string>
+	<key>Abreve</key>
+	<string>Abreve_.glif</string>
 	<key>Acircumflex</key>
 	<string>A_circumflex.glif</string>
 	<key>Adieresis</key>
 	<string>A_dieresis.glif</string>
 	<key>Agrave</key>
 	<string>A_grave.glif</string>
+	<key>Amacron</key>
+	<string>Amacron_.glif</string>
 	<key>Aogonek</key>
 	<string>A_ogonek.glif</string>
 	<key>Aring</key>
@@ -30,16 +36,28 @@
 	<string>C_.glif</string>
 	<key>CR</key>
 	<string>C_R_.glif</string>
+	<key>Cacute</key>
+	<string>Cacute_.glif</string>
+	<key>Ccaron</key>
+	<string>Ccaron_.glif</string>
 	<key>Ccedilla</key>
 	<string>C_cedilla.glif</string>
+	<key>Ccircumflex</key>
+	<string>Ccircumflex_.glif</string>
 	<key>D</key>
 	<string>D_.glif</string>
+	<key>Dcaron</key>
+	<string>Dcaron_.glif</string>
 	<key>Dcedilla</key>
 	<string>D_cedilla.glif</string>
 	<key>E</key>
 	<string>E_.glif</string>
 	<key>Eacute</key>
 	<string>E_acute.glif</string>
+	<key>Ebreve</key>
+	<string>Ebreve_.glif</string>
+	<key>Ecaron</key>
+	<string>Ecaron_.glif</string>
 	<key>Ecedilla</key>
 	<string>E_cedilla.glif</string>
 	<key>Ecircumflex</key>
@@ -48,6 +66,8 @@
 	<string>E_dieresis.glif</string>
 	<key>Egrave</key>
 	<string>E_grave.glif</string>
+	<key>Emacron</key>
+	<string>Emacron_.glif</string>
 	<key>Eogonek</key>
 	<string>E_ogonek.glif</string>
 	<key>Eth</key>
@@ -58,32 +78,54 @@
 	<string>F_.glif</string>
 	<key>G</key>
 	<string>G_.glif</string>
+	<key>Gbreve</key>
+	<string>Gbreve_.glif</string>
+	<key>Gcaron</key>
+	<string>Gcaron_.glif</string>
+	<key>Gcircumflex</key>
+	<string>Gcircumflex_.glif</string>
 	<key>H</key>
 	<string>H_.glif</string>
 	<key>Hcedilla</key>
 	<string>H_cedilla.glif</string>
+	<key>Hcircumflex</key>
+	<string>Hcircumflex_.glif</string>
 	<key>I</key>
 	<string>I_.glif</string>
 	<key>Iacute</key>
 	<string>I_acute.glif</string>
+	<key>Ibreve</key>
+	<string>Ibreve_.glif</string>
 	<key>Icircumflex</key>
 	<string>I_circumflex.glif</string>
 	<key>Idieresis</key>
 	<string>I_dieresis.glif</string>
 	<key>Igrave</key>
 	<string>I_grave.glif</string>
+	<key>Imacron</key>
+	<string>Imacron_.glif</string>
 	<key>Iogonek</key>
 	<string>I_ogonek.glif</string>
+	<key>Itilde</key>
+	<string>Itilde_.glif</string>
 	<key>J</key>
 	<string>J_.glif</string>
+	<key>Jcircumflex</key>
+	<string>Jcircumflex_.glif</string>
 	<key>K</key>
 	<string>K_.glif</string>
 	<key>L</key>
 	<string>L_.glif</string>
+	<key>Lacute</key>
+	<string>Lacute_.glif</string>
 	<key>M</key>
 	<string>M_.glif</string>
 	<key>N</key>
 	<string>N_.glif</string>
+	<key>Nacute</key>
+	<string>Nacute_.glif</string>
+	<key>Ncaron</key>
+	<string>Ncaron_.glif</string>
 	<key>Ntilde</key>
 	<string>N_tilde.glif</string>
 	<key>O</key>
@@ -92,16 +134,24 @@
 	<string>O_E_.glif</string>
 	<key>Oacute</key>
 	<string>O_acute.glif</string>
+	<key>Obreve</key>
+	<string>Obreve_.glif</string>
 	<key>Ocircumflex</key>
 	<string>O_circumflex.glif</string>
 	<key>Odieresis</key>
 	<string>O_dieresis.glif</string>
 	<key>Ograve</key>
 	<string>O_grave.glif</string>
+	<key>Ohungarumlaut</key>
+	<string>Ohungarumlaut_.glif</string>
+	<key>Omacron</key>
+	<string>Omacron_.glif</string>
 	<key>Oogonek</key>
 	<string>O_ogonek.glif</string>
 	<key>Oslash</key>
 	<string>O_slash.glif</string>
+	<key>Oslashacute</key>
+	<string>Oslashacute_.glif</string>
 	<key>Otilde</key>
 	<string>O_tilde.glif</string>
 	<key>P</key>
@@ -110,14 +160,24 @@
 	<string>Q_.glif</string>
 	<key>R</key>
 	<string>R_.glif</string>
+	<key>Racute</key>
+	<string>Racute_.glif</string>
+	<key>Rcaron</key>
+	<string>Rcaron_.glif</string>
 	<key>S</key>
 	<string>S_.glif</string>
+	<key>Sacute</key>
+	<string>Sacute_.glif</string>
 	<key>Scaron</key>
 	<string>S_caron.glif</string>
 	<key>Scedilla</key>
 	<string>S_cedilla.glif</string>
+	<key>Scircumflex</key>
+	<string>Scircumflex_.glif</string>
 	<key>T</key>
 	<string>T_.glif</string>
+	<key>Tcaron</key>
+	<string>Tcaron_.glif</string>
 	<key>Tcedilla</key>
 	<string>T_cedilla.glif</string>
 	<key>Thorn</key>
@@ -126,28 +186,52 @@
 	<string>U_.glif</string>
 	<key>Uacute</key>
 	<string>U_acute.glif</string>
+	<key>Ubreve</key>
+	<string>Ubreve_.glif</string>
 	<key>Ucircumflex</key>
 	<string>U_circumflex.glif</string>
 	<key>Udieresis</key>
 	<string>U_dieresis.glif</string>
 	<key>Ugrave</key>
 	<string>U_grave.glif</string>
+	<key>Uhungarumlaut</key>
+	<string>Uhungarumlaut_.glif</string>
+	<key>Umacron</key>
+	<string>Umacron_.glif</string>
 	<key>Uogonek</key>
 	<string>U_ogonek.glif</string>
+	<key>Uring</key>
+	<string>Uring_.glif</string>
+	<key>Utilde</key>
+	<string>Utilde_.glif</string>
 	<key>V</key>
 	<string>V_.glif</string>
 	<key>W</key>
 	<string>W_.glif</string>
+	<key>Wacute</key>
+	<string>Wacute_.glif</string>
+	<key>Wcircumflex</key>
+	<string>Wcircumflex_.glif</string>
+	<key>Wdieresis</key>
+	<string>Wdieresis_.glif</string>
+	<key>Wgrave</key>
+	<string>Wgrave_.glif</string>
 	<key>X</key>
 	<string>X_.glif</string>
 	<key>Y</key>
 	<string>Y_.glif</string>
 	<key>Yacute</key>
 	<string>Y_acute.glif</string>
+	<key>Ycircumflex</key>
+	<string>Ycircumflex_.glif</string>
 	<key>Ydieresis</key>
 	<string>Y_dieresis.glif</string>
+	<key>Ygrave</key>
+	<string>Ygrave_.glif</string>
 	<key>Z</key>
 	<string>Z_.glif</string>
+	<key>Zacute</key>
+	<string>Zacute_.glif</string>
 	<key>Zcaron</key>
 	<string>Z_caron.glif</string>
 	<key>a</key>
@@ -328,6 +412,8 @@
 	<string>h.glif</string>
 	<key>hcedilla</key>
 	<string>hcedilla.glif</string>
+	<key>hungarumlaut</key>
+	<string>hungarumlaut.glif</string>
 	<key>hyphen</key>
 	<string>hyphen.glif</string>
 	<key>i</key>
@@ -402,6 +488,8 @@
 	<string>ogonek.glif</string>
 	<key>ograve</key>
 	<string>ograve.glif</string>
+	<key>ohungarumlaut</key>
+	<string>ohungarumlaut.glif</string>
 	<key>omacron</key>
 	<string>omacron.glif</string>
 	<key>one</key>
@@ -512,6 +600,8 @@
 	<string>udieresis.glif</string>
 	<key>ugrave</key>
 	<string>ugrave.glif</string>
+	<key>uhungarumlaut</key>
+	<string>uhungarumlaut.glif</string>
 	<key>umacron</key>
 	<string>umacron.glif</string>
 	<key>underscore</key>

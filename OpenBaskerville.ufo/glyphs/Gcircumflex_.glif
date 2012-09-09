@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="Agrave" format="1">
-  <advance width="720"/>
-  <unicode hex="00C0"/>
+<glyph name="Gcircumflex" format="1">
+  <advance width="784"/>
+  <unicode hex="011C"/>
   <outline>
-    <component base="A"/>
-    <component base="grave" xOffset="178" yOffset="229"/>
+    <component base="circumflex" xOffset="222" yOffset="229"/>
+    <component base="G"/>
   </outline>
   <lib>
     <dict>

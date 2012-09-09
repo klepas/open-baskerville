@@ -50,6 +50,8 @@
 	<string>Dcaron_.glif</string>
 	<key>Dcedilla</key>
 	<string>D_cedilla.glif</string>
+	<key>Dcroat</key>
+	<string>Dcroat_.glif</string>
 	<key>E</key>
 	<string>E_.glif</string>
 	<key>Eacute</key>
@@ -324,6 +326,8 @@
 	<string>daggerdbl.glif</string>
 	<key>dcedilla</key>
 	<string>dcedilla.glif</string>
+	<key>dcroat</key>
+	<string>dcroat.glif</string>
 	<key>degree</key>
 	<string>degree.glif</string>
 	<key>dieresis</key>
@@ -402,6 +406,12 @@
 	<string>g.glif</string>
 	<key>g_i</key>
 	<string>g_i.glif</string>
+	<key>gbreve</key>
+	<string>gbreve.glif</string>
+	<key>gcaron</key>
+	<string>gcaron.glif</string>
+	<key>gcircumflex</key>
+	<string>gcircumflex.glif</string>
 	<key>germandbls</key>
 	<string>germandbls.glif</string>
 	<key>grave</key>
@@ -412,6 +422,8 @@
 	<string>h.glif</string>
 	<key>hcedilla</key>
 	<string>hcedilla.glif</string>
+	<key>hcircumflex</key>
+	<string>hcircumflex.glif</string>
 	<key>hungarumlaut</key>
 	<string>hungarumlaut.glif</string>
 	<key>hyphen</key>
@@ -440,6 +452,8 @@
 	<string>itilde.glif</string>
 	<key>j</key>
 	<string>j.glif</string>
+	<key>jcircumflex</key>
+	<string>jcircumflex.glif</string>
 	<key>k</key>
 	<string>k.glif</string>
 	<key>kgreenlandic</key>
@@ -502,6 +516,8 @@
 	<string>ordmasculine.glif</string>
 	<key>oslash</key>
 	<string>oslash.glif</string>
+	<key>oslashacute</key>
+	<string>oslashacute.glif</string>
 	<key>otilde</key>
 	<string>otilde.glif</string>
 	<key>p</key>
@@ -620,6 +636,8 @@
 	<string>wacute.glif</string>
 	<key>wcircumflex</key>
 	<string>wcircumflex.glif</string>
+	<key>wdieresis</key>
+	<string>wdieresis.glif</string>
 	<key>wgrave</key>
 	<string>wgrave.glif</string>
 	<key>x</key>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="Acircumflex" format="1">
-  <advance width="720"/>
-  <unicode hex="00C2"/>
+<glyph name="Cdotaccent" format="1">
+  <advance width="668"/>
+  <unicode hex="010A"/>
   <outline>
-    <component base="A"/>
-    <component base="circumflex" xOffset="201" yOffset="229"/>
+    <component base="C"/>
+    <component base="dotaccent" xOffset="276" yOffset="242"/>
   </outline>
   <lib>
     <dict>

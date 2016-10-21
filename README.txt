@@ -26,5 +26,3 @@ The Open Baskerville font files are dual-licensed under the GNU GPL version 3 (G
 We welcome contributions! You can check out the issue tracker to see what we are currently working on. We manage contributions through Git, a version control system, and GitHub. If you are new to working with a versioning system, our project website offers an explanation of the process.
 
 ## Thanks ##
-
-Thanks!

@@ -1,3 +1,3 @@
 import argparse
-from compilers import Compiler
-from diagnostics import diagnostics, FontError
+from ufo2otf.compilers import Compiler
+from ufo2otf.diagnostics import diagnostics, FontError

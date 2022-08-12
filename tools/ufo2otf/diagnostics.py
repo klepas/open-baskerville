@@ -137,4 +137,4 @@ class FontError(Exception):
 if __name__ == "__main__":
     # This will print diagnostics to stdout
     e = FontError()
-    print e
+    print(e)

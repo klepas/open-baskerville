@@ -40,23 +40,23 @@ commit_msg_wrapper = TextWrapper(subsequent_indent='    ', width=82)
 # Print FONTLOG to stdout
 
 for line in README:
-    print wrapper.fill(line)
+    print(wrapper.fill(line))
 
-print ""
-print "____"
-print ""
-print "Designers:"
-print ""
-print AUTHORS.read().split("with Reserved Font Name")[0] # Above there, it lists the designers
+print("")
+print("____")
+print("")
+print("Designers:")
+print("")
+print(AUTHORS.read().split("with Reserved Font Name")[0]) # Above there, it lists the designers
 
-print "____"
-print ""
-print "Changelog:"
-print ""
+print("____")
+print("")
+print("Changelog:")
+print("")
 
 for line in LOG.stdout:
     if len(line) > 82:
-        print commit_msg_wrapper.fill(line)
+        print(commit_msg_wrapper.fill(line))
     else:
-        print line,
+        print(line)
 

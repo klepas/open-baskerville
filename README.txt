@@ -21,6 +21,13 @@ FontForge supports UFO natively, as will the upcoming version of Fontlab. For Fo
 
 The Open Baskerville font files are dual-licensed under the GNU GPL version 3 (GNU General Public License) and the SIL Open Font License (OFL). See 'COPYING-GPLv3.txt' and 'COPYING-OFL.txt' respectively. There is also a FAQ on the OFL (see 'COPYING-OFL-FAQ.txt').
 
+## Compiling the fonts
+
+You will need [rake](https://github.com/ruby/rake), [fontforge](https://fontforge.org/en-US/) and [afdko](https://github.com/adobe-type-tools/afdko).
+On Arch, install `rake` via pacman and also the AUR packages [fontforge](https://archlinux.org/packages/extra/x86_64/fontforge/) and [afdko](https://aur.archlinux.org/packages/afdko).
+
+Once done, run `rake otf` (for Open Type Font) or `rake webfonts` to compile the font in the corresponding format. 
+
 ## Contribute back ##
 
 We welcome contributions! You can check out the issue tracker to see what we are currently working on. We manage contributions through Git, a version control system, and GitHub. If you are new to working with a versioning system, our project website offers an explanation of the process.

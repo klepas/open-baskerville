@@ -3,7 +3,7 @@
 from os import mkdir
 from os.path import splitext, dirname, sep, join, exists, basename
 from codecs import open
-from diagnostics import diagnostics, known_compilers, FontError
+from ufo2otf.diagnostics import diagnostics, known_compilers, FontError
 
 diagnostics = diagnostics()
 
@@ -37,7 +37,7 @@ class Compiler:
             
             if self.webfonts:
                 webfonts_path = join(outdir, 'webfonts')
-                print webfonts_path
+                print(webfonts_path)
                 if not exists(webfonts_path):
                     mkdir(webfonts_path)
 
